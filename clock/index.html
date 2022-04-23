@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+
+<html><head><title>Blog Zone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="twotu.xyz/avys/avy6.png" type="image/x-icon">  
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    * {
+        font-family: "DisposableDroid BB";
+        color: rgb(255,255,255);
+        font-size: 80px;
+      }
+    </style>
+    </head><body style="background-color: rgb(0, 0, 0);">
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  let ampm = 'AM';
+
+  if(h > 12){
+      h = h-12;
+      ampm = 'PM';
+  }
+
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML = `${today.getMonth()}/${today.getDay()}/${today.getFullYear()} - ` + h + ":" + m + ":" + s + ' ' + ampm;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</body>
+</html>
