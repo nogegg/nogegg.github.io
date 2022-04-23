@@ -40,7 +40,7 @@ function startTime() {
 
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('txt').innerHTML = `${today.getMonth()}/${today.getDay()}/${today.getFullYear()} - ` + h + ":" + m + ":" + s + ' ' + ampm;
+  document.getElementById('txt').innerHTML = `${today.getMonth()}/${today.getDate()}/${today.getFullYear()} - ` + h + ":" + m + ":" + s + ' ' + ampm;
   setTimeout(startTime, 1000);
 }
 
