@@ -21,7 +21,7 @@
 
 <body onload="startTime()">
 
-<center><div class='w3-card w3-white' id="txt"></div></center>
+<center><div class='w3-padding-top w3-white' id="txt"></div></center>
 
 <script>
 function startTime() {
@@ -35,8 +35,10 @@ function startTime() {
       h = 12;
   }
 
-  if(h > 12){
+  if(h > 11){
+    if(h != 12){
       h = h-12;
+    }
       ampm = 'PM';
   }
 
