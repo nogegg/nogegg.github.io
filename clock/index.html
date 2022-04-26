@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+      
     * {
         font-family: "DisposableDroid BB";
         color: rgb(255,255,255);
         font-size: 80px;
       }
+      
     </style>
-    </head><body style="background-color: rgb(0, 0, 0);">
+    </head><body style="background-color: rgb(255, 255, 255);">
 
 <body onload="startTime()">
 
-<div id="txt"></div>
+<center><div class='w3-card w3-white' id="txt"></div></center>
 
 <script>
 function startTime() {
@@ -40,7 +42,7 @@ function startTime() {
 
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('txt').innerHTML = `${today.getMonth()}/${today.getDate()}/${today.getFullYear()} - ` + h + ":" + m + ":" + s + ' ' + ampm;
+  document.getElementById('txt').innerHTML = ` ${today.getMonth()}/${today.getDate()}/${today.getFullYear()} - ` + h + ":" + m + ":" + s + ' ' + ampm + '';
   setTimeout(startTime, 1000);
 }
 
