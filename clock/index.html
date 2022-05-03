@@ -71,10 +71,10 @@
 
       function addTime() {
         const today = new Date();
-        let h = today.getHours();
-        let m = today.getMinutes();
-        let s = today.getSeconds();
-        let ms = today.getMilliseconds();
+        let h = today.getHours().toString();
+        let m = today.getMinutes().toString();
+        let s = today.getSeconds().toString();
+        let ms = today.getMilliseconds().toString();
 
         if(ms.toString().length == 1){
           ms = ms + '00';
@@ -86,7 +86,7 @@
           s = '0' + s;
         }
         if(m.toString().length == 1){
-          m = '0' + s;
+          m = '0' + m;
         }
 
         document.getElementById('timers').innerHTML = document.getElementById('timers').innerHTML + `${count} - ${h}:${m}:${s}.${ms}` + '</br>';
