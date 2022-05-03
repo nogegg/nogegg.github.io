@@ -21,7 +21,7 @@
       font-family: 'Roboto', sans-serif;
       color: rgb(0, 0, 0);
       background-color: rgb(255, 255, 255);
-      font-size: 80px;
+      font-size: 60px;
     }
 
     .dark-mode {
@@ -36,10 +36,15 @@
   <body onload="startTime()">
 
     <center>
-      <div onclick="toggleDark()" class='w3-button w3-padding-top' id="txt"></div>
+      <div onclick="toggleDark()" class='w3-button w3-padding-top' id="txt"> </div>  <a onclick="addTime()" class="w3-button">＋</a> <a onclick="reload()" class="w3-button">⟳</a> 
+      <div id="timers"></div>
     </center>
 
+    
+ 
     <script>
+      var count = 1;
+
       function startTime() {
         const today = new Date();
         let h = today.getHours();
@@ -60,8 +65,37 @@
 
         m = checkTime(m);
         s = checkTime(s);
-        document.getElementById('txt').innerHTML = ` ${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()} - ` + h + ":" + m + ":" + s + ' ' + ampm + '';
+        document.getElementById('txt').innerHTML = ` ${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()} - ` + `${h}:${m}:${s} ${ampm}`;
         setTimeout(startTime, 1000);
+      }
+
+      function addTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        let ms = today.getMilliseconds();
+
+        if(ms.toString().length == 1){
+          ms = ms + '00';
+        } else if (ms.length == 2){
+          ms = ms + '0';
+        }
+
+        if(s.toString().length == 1){
+          s = '0' + s;
+        }
+        if(m.toString().length == 1){
+          m = '0' + s;
+        }
+
+        document.getElementById('timers').innerHTML = document.getElementById('timers').innerHTML + `${count} - ${h}:${m}:${s}.${ms}` + '</br>';
+        count = count+1;
+      }
+
+      function reload(){
+        document.getElementById('timers').innerHTML = '';
+        count = 1;
       }
 
       function toggleDark() {
