@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 
 
-<html><head><title>Clock Zone</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="twotu.xyz/avys/avy6.png" type="image/x-icon">  
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-    <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      
-    * {
-        font-family: "DisposableDroid BB";
-        color: rgb(255,255,255);
-        font-size: 80px;
-      }
-      
-    </style>
-    </head><body style="background-color: rgb(255, 255, 255);">
+<html>
 
-<body onload="startTime()">
-
-<center><div class='w3-padding-top w3-white' id="txt"></div></center>
-
-<script>
-function startTime() {
-  const today = new Date();
-  let h = today.getHours();
-  let m = today.getMinutes();
-  let s = today.getSeconds();
-  let ampm = 'AM';
-
-  if(h == 0){
-      h = 12;
-  }
-
-  if(h > 11){
-    if(h != 12){
-      h = h-12;
+<head>
+  <title>Clock Zone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="twotu.xyz/avys/avy6.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: "DisposableDroid BB";
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      font-size: 80px;
     }
-      ampm = 'PM';
-  }
 
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML = ` ${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()} - ` + h + ":" + m + ":" + s + ' ' + ampm + '';
-  setTimeout(startTime, 1000);
-}
+    .dark-mode {
+      background-color: rgb(49, 47, 47);
+      color: rgb(211, 211, 211);
+    }
+  </style>
+</head>
 
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
-</script>
+<body>
 
-</body>
+  <body onload="startTime()">
+
+    <center>
+      <div onclick="toggleDark()" class='w3-button w3-padding-top' id="txt"></div>
+    </center>
+
+    <script>
+      function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        let ampm = 'AM';
+
+        if (h == 0) {
+          h = 12;
+        }
+
+        if (h > 11) {
+          if (h != 12) {
+            h = h - 12;
+          }
+          ampm = 'PM';
+        }
+
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML = ` ${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()} - ` + h + ":" + m + ":" + s + ' ' + ampm + '';
+        setTimeout(startTime, 1000);
+      }
+
+      function toggleDark() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      } 
+
+      function checkTime(i) {
+        if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+        return i;
+      }
+    </script>
+
+  </body>
+
 </html>
