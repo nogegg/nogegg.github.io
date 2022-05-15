@@ -66,7 +66,7 @@
         m = checkTime(m);
         s = checkTime(s);
         document.getElementById('txt').innerHTML = ` ${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()} - ` + `${h}:${m}:${s} ${ampm}`;
-        setTimeout(startTime, 1000);
+        setTimeout(startTime, 500);
       }
 
       function addTime() {
@@ -74,13 +74,6 @@
         let h = today.getHours().toString();
         let m = today.getMinutes().toString();
         let s = today.getSeconds().toString();
-        let ms = today.getMilliseconds().toString();
-
-        if(ms.toString().length == 1){
-          ms = ms + '00';
-        } else if (ms.length == 2){
-          ms = ms + '0';
-        }
 
         if(s.toString().length == 1){
           s = '0' + s;
@@ -89,7 +82,7 @@
           m = '0' + m;
         }
 
-        document.getElementById('timers').innerHTML = document.getElementById('timers').innerHTML + `${count} - ${h}:${m}:${s}.${ms}` + '</br>';
+        document.getElementById('timers').innerHTML = document.getElementById('timers').innerHTML + `${count} - ${h}:${m}:${s}` + '</br>';
         count = count+1;
       }
 
