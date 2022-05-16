@@ -1,7 +1,14 @@
 <html><head><title>Blog Zone</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="twotu.xyz/avys/avy6.png" type="image/x-icon">  
+
+    <meta content="Discord - Free Voice and Text Chat" property="og:title">
+
+    <meta content="The pit where I keep all my posts" property="og:description">
+    <meta content="Blog Zone" property="og:site_name">
+    <meta content='../avys/avy6.png' property='og:image'>
+
+    <link rel="shortcut icon" href="https://2tu.dev/avys/avy6.png" type="image/x-icon">  
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,7 +31,8 @@
         transform: translateZ(0);
     }
     </style>
-    </head><body style="background-color: rgb(0, 0, 0);">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head><body onload="loadPosts()" style="background-color: rgb(0, 0, 0);">
     
     <!--<div class="w3-padding w3-center w3-text-black" style="background-color: bisque;"><b class="w3-text-black">/////</b> I'm still making this site <b class="w3-text-black">\\\\\</b></div>-->
     <div class="w3-animate-top w3-padding-large w3-center" style="border-width: 5px; border-style: none none double none; border-color: rgb(255,230,255);">
@@ -42,9 +50,9 @@
       <div class="">
         <div class="w3-third">
           <div class="w3-padding w3-animate-top w3-card-4" style="border-width: 5px; border-style: none double none none; border-color: rgb(255,230,255); max-width:500px;">
-            <img class="w3-center" style="max-width:100%" src="images/icon3.png">
+            <img class="w3-center" style="max-width:100%" src="../images/icon3.png">
             <p style="overflow: hidden;" class="w3-center">════════════════════════════════════════════════</p>
-            <center><img class="w3-center w3-padding-large w3-margin-bottom" style="width:75%;" src="avys/avy6.png"></center>
+            <center><img class="w3-center w3-padding-large w3-margin-bottom" style="width:75%;" src="../avys/avy6.png"></center>
             <p class="w3-margin"><b>Age:</b> 21</p>
             <p class="w3-margin"><b>Pronouns:</b> I dunno</p>
             <p class="w3-margin"><b>Discord:</b> kab#9488</p>
@@ -68,25 +76,11 @@
     <div class="w3-twothird">
       <div class="w3-animate-top w3-container w3-card">
         <br>
-      <center><img class="w3-margin-top" style="width:50%;" src="images/postsicon.png"></center>
+      <center><img class="w3-margin-top" style="width:50%;" src="../images/postsicon.png"></center>
         <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
-          <br>
-          <p><b>Title:</b> ﻿What Now? - 1/21/22</p>
-          <p><b>Content:</b> I dunno, don't really know what I wanna do with these couple of pages now - I'll think of something later</p>
-          <br>
-          <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
-        
-          <br>
-          <p><b>Title:</b> Art - 1/20/22</p>
-          <p><b>Content:</b> I think I've been drawing for about 7 years now, doesn't feel like I've gotten very far but my friends tell me otherwise so maybe I'm wrong - Still got a long way to go until my art skills are where I want them to be - My twitter page (the one I post in the most often), my deviantart page, and my github page (for my programming projects and also this website), are all stored in the "Link Zone" page at the top of this one</p>
-          <br>
-          <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
+
+        <div id="posts">Posts will not generate unless javascript is enabled</div>
           
-          <br>
-          <p><b>Title:</b> Programming - 1/20/22</p>
-          <p><b>Content:</b> Programming is another one of those things that I only like doing for fun, although I still do it at work a lot - My biggest project so far is Kit (name change pending), a discord bot that's been my outlet for the past 5 years or so while I learned how to use Javascript - Her and all her ugly code is available on my github page</p>
-          <br>
-          <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
       </div>
     </div>
 
@@ -101,3 +95,21 @@
     
     
     </body></html>
+
+    <script>
+      function loadPosts() {
+        $.getJSON(["posts.json"], function(posts) {
+          var final = '';
+          posts.forEach(e=>{
+            final = final + 
+            `<br>
+          <p><b>Title:</b> ${e.title} - ${e.date}</p>
+          <p><b>Image:</b> <img style="max-width:100%" src="${e.img}"></p>
+          <br>
+          <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>`
+          })
+          document.getElementById('posts').innerHTML = final;
+        });
+      }
+
+    </script>
