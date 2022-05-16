@@ -64,30 +64,14 @@
         </div><br>
         </div>
     
-        
-    <!-- Post Template -->
-    <div class="w3-twothird">
+     <div class="w3-twothird">
       <div class="w3-animate-top w3-container w3-card">
         <br>
-      <center><img class="w3-margin-top" style="width:50%;" src="../images/postsicon.png"></center>
+      <center><img class="w3-margin-top" style="width:50%;" src="images/postsicon.png"></center>
         <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
-          <br>
-          <p><b>Title:</b> ﻿What Now? - 1/21/22</p>
-          <p><b>Content:</b> I dunno, don't really know what I wanna do with these couple of pages now - I'll think of something later</p>
-          <br>
-          <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
-        
-          <br>
-          <p><b>Title:</b> Art - 1/20/22</p>
-          <p><b>Content:</b> I think I've been drawing for about 7 years now, doesn't feel like I've gotten very far but my friends tell me otherwise so maybe I'm wrong - Still got a long way to go until my art skills are where I want them to be - My twitter page (the one I post in the most often), my deviantart page, and my github page (for my programming projects and also this website), are all stored in the "Link Zone" page at the top of this one</p>
-          <br>
-          <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
+
+        <div id="posts">Posts will only generate with javascript enabled</div>
           
-          <br>
-          <p><b>Title:</b> Programming - 1/20/22</p>
-          <p><b>Content:</b> Programming is another one of those things that I only like doing for fun, although I still do it at work a lot - My biggest project so far is Kit (name change pending), a discord bot that's been my outlet for the past 5 years or so while I learned how to use Javascript - Her and all her ugly code is available on my github page</p>
-          <br>
-          <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
       </div>
     </div>
 
@@ -99,6 +83,23 @@
         <a href="https://github.com/2tuu" class="fa w3-button fa-github w3-hover-opacity"></a>
     </footer>
     
-    
-    
     </body></html>
+
+    
+    <script>
+      function loadPosts() {
+        $.getJSON(["posts.json"], function(posts) {
+          var final = '';
+          posts.forEach(e=>{
+            final = final + 
+            `<br>
+            <p><b>Title:</b> ${e.title} - ${e.date}</p>
+            <p><b>Content:</b> ${e.content}</p>
+            <br>
+            <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>`
+          })
+          document.getElementById('posts').innerHTML = final;
+        });
+      }
+
+    </script>
