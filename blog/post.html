@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html><head><title>Blog Zone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://2tu.dev/avys/avy6.png" type="image/x-icon">  
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgb(255,230,255);
+    }
+    * {
+        font-family: "DisposableDroid BB";
+        color: rgb(255,230,255);
+        font-size: 22px;
+      }
+      img {
+        -webkit-backface-visibility: hidden; 
+        -ms-transform: translateZ(0); /* IE 9 */
+        -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+        transform: translateZ(0);
+    }
+    </style>
+    </head><body onload="loadPosts()" style="background-color: rgb(0, 0, 0);">
+    
+    <!--<div class="w3-padding w3-center w3-text-black" style="background-color: bisque;"><b class="w3-text-black">/////</b> I'm still making this site <b class="w3-text-black">\\\\\</b></div>-->
+    <div class="w3-animate-top w3-padding-large w3-center" style="border-width: 5px; border-style: none none double none; border-color: rgb(255,230,255);">
+      <a style="">*</a>
+      <a class="w3-button" href="../blog"> Home </a>
+      <a style="">*</a>
+      <a class="w3-button" href="../links"> Link Zone </a>
+      <a style="">*</a>
+      <a class="w3-button" href="../kit"> Kit </a>
+      <a style="">*</a>
+      <a class="w3-button" href="../art"> Art </a>
+      <a style="">*</a>
+      </div>
+    
+    <div class="w3-content w3-margin-top" style="max-width:1000px;">
+
+    <div id="post"></div>
+
+    
+    <script>
+      function loadPosts() {
+        $.getJSON(["posts.json"], function(posts) {
+          var final = '';
+          posts.forEach(e=>{
+            final = final + `<br>
+            <p><b>Title:</b> ${e.title} - ${e.date}</p>
+            <p><b>Content:</b> ${e.content}</p>
+            <br>
+            <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>`
+          })
+          document.getElementById('posts').innerHTML = final;
+        });
+      }
+
+    </script>
