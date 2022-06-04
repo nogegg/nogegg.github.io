@@ -155,7 +155,8 @@
             pages[page-1].forEach(e=>{
             final = final + 
             `<br>
-            <p><b>Title:</b> ${e.title} - ${e.date}</p>
+            <a id=post${e.id}><b>Title:</b> ${e.title} - ${e.date}</a>
+            <br>
             <p><b>Image:<br></b> <img style="max-width:100%" src="${e.img}"></p>
             <br>
             <a class="w3-button" href='post.html?pageref=${page}&post=${e.id}' style="width:100%">* View Post *</a>

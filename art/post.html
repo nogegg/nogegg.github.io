@@ -74,6 +74,7 @@
 
                 posts.forEach(post => {
                     postIDs['post' + post.id] = {
+                        id: post.id,
                         src: post.img,
                         title: post.title
                     }
@@ -90,11 +91,13 @@
 
                 var embedImage = './static/err.jpg'
                 var embedTitle = 'Invalid Post'
+                var refID = '0';
                 if (getParameterByName('post')) {
                     var p = getParameterByName('post');
                     if (postIDs['post' + p]) {
                         embedImage = './' + postIDs['post' + p].src;
                         embedTitle = postIDs['post' + p].title;
+                        refID = 'post' + postIDs['post' + p].id;
                     }
                 }
 
@@ -106,7 +109,7 @@
                 final = `
                 <center><img style="max-width:100%" src=${embedImage}></center>
                 <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
-                <center><a href='./?page=${refpage}' class="w3-center">* Go Back *</a></center>
+                <center><a href='./?page=${refpage}#${refID}' class="w3-center">* Go Back *</a></center>
                 <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
                 `
 
