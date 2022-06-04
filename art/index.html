@@ -166,22 +166,22 @@
         if(firstpage){
           final = final + 
           `<div class="w3-center">
-            <a class='w3-button' >X</a>---<a class='w3-button' onclick='goPage(${page+1})'>></a>
+            <a class='w3-button' >X--</a>Page ${page}<a class='w3-button' onclick='goPage(${page+1})'>--></a>
             </div>`
           } else if(lastpage){
             final = final + 
             `<div class="w3-center">
-            <a class='w3-button' onclick='goPage(${page-1})'><</a>---<a class='w3-button'>X</a>
+            <a class='w3-button' onclick='goPage(${page-1})'><--</a>Page ${page}<a class='w3-button'>--X</a>
             </div>`
           } else if(page == 'err'){
             final = final + 
             `<div class="w3-center">
-            <a class='w3-button' >X</a>---<a class='w3-button'>X</a>
+            <a class='w3-button' >X--</a> Page Error <a class='w3-button'>--X</a>
             </div>`
           } else {
             final = final + 
             `<div class="w3-center">
-            <a class='w3-button' onclick='goPage(${page-1})'><</a>---<a class='w3-button' onclick='goPage(${page+1})'>></a>
+            <a class='w3-button' onclick='goPage(${page-1})'><--</a>Page ${page}<a class='w3-button' onclick='goPage(${page+1})'>--></a>
             </div>`
           }
 
