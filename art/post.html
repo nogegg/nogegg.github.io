@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta content="Discord - Free Voice and Text Chat" property="og:title">
+    <meta content="Post" property="og:title">
 
     <meta content="The pit where I keep all my posts" property="og:description">
     <meta content="Blog Zone" property="og:site_name">
@@ -74,7 +74,8 @@
 
                 posts.forEach(post => {
                     postIDs['post' + post.id] = {
-                        src: post.img
+                        src: post.img,
+                        title: post.title
                     }
                 });
 
@@ -88,10 +89,12 @@
                 }
 
                 var embedImage = './static/err.jpg'
+                var embedTitle = 'Invalid Post'
                 if (getParameterByName('post')) {
                     var p = getParameterByName('post');
                     if (postIDs['post' + p]) {
                         embedImage = './' + postIDs['post' + p].src;
+                        document.title = postIDs['post' + p].title;
                     }
                 }
 
@@ -106,6 +109,8 @@
                 <center><a href='./?page=${refpage}' class="w3-center">* Go Back *</a></center>
                 <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
                 `
+
+                document.title = embedTitle;
 
                 document.getElementById('post').innerHTML = final;
             });
