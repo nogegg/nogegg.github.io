@@ -94,7 +94,7 @@
                     var p = getParameterByName('post');
                     if (postIDs['post' + p]) {
                         embedImage = './' + postIDs['post' + p].src;
-                        document.title = postIDs['post' + p].title;
+                        embedTitle = postIDs['post' + p].title;
                     }
                 }
 
@@ -104,13 +104,13 @@
                 }
 
                 final = `
-                <center><img src=${embedImage}></center>
+                <center><img style="max-width:100%" src=${embedImage}></center>
                 <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
                 <center><a href='./?page=${refpage}' class="w3-center">* Go Back *</a></center>
                 <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
                 `
 
-                document.title = embedTitle;
+                document.title = embedTitle + ' - Art Zone';
 
                 document.getElementById('post').innerHTML = final;
             });
