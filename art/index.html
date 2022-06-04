@@ -100,17 +100,91 @@
     </body></html>
 
     <script>
+      function goPage(page){
+        window.location = window.location.href.split("?")[0] + '?page=' + page;;
+      }
+
       function loadPosts() {
         $.getJSON(["artposts.json"], function(posts) {
+          var pages = [];
+          var page = 1;
+          const chunk = 4;
+          for (let i = 0; i < posts.length; i += chunk) {
+              const thisChunk = posts.slice(i, i + chunk);
+                    pages.push(thisChunk);
+          }
+
+          function getParameterByName(name, url = window.location.href) {
+              name = name.replace(/[\[\]]/g, '\\$&');
+              var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                  results = regex.exec(url);
+              if (!results) return null;
+              if (!results[2]) return '';
+              return decodeURIComponent(results[2].replace(/\+/g, ' '));
+          }
+
+          if(getParameterByName('page')){
+            var p = getParameterByName('page');
+            if(isNaN(p) || p>pages.length){
+              page = 'err';
+            } else {
+              page = parseInt(p);
+            }
+          }
+
+          var lastpage = false;
+          if(page != 'err'){
+            if(page+1 > pages.length){
+              lastpage = true;
+            }
+          }
+
+          var firstpage = false;
+          if(page != 'err'){
+            if(page == 1){
+              firstpage = true;
+            }
+          }
+
           var final = '';
-          posts.forEach(e=>{
+          if(page == 'err'){
+            final = `
+            put error page code here
+            `
+          } else {
+            pages[page-1].forEach(e=>{
             final = final + 
             `<br>
-          <p><b>Title:</b> ${e.title} - ${e.date}</p>
-          <p><b>Image:<br></b> <img style="max-width:100%" src="${e.img}"></p>
-          <br>
-          <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>`
-          })
+            <p><b>Title:</b> ${e.title} - ${e.date}</p>
+            <p><b>Image:<br></b> <img style="max-width:100%" src="${e.img}"></p>
+            <br>
+            <a class="w3-button" href='post.html?pageref=${page}&post=${e.id}' style="width:100%">* View Post *</a>
+            <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>`        
+            })
+          }
+
+        if(firstpage){
+          final = final + 
+          `<div class="w3-center">
+            <a class='w3-button' >X</a>---<a class='w3-button' onclick='goPage(${page+1})'>></a>
+            </div>`
+          } else if(lastpage){
+            final = final + 
+            `<div class="w3-center">
+            <a class='w3-button' onclick='goPage(${page-1})'><</a>---<a class='w3-button'>X</a>
+            </div>`
+          } else if(page == 'err'){
+            final = final + 
+            `<div class="w3-center">
+            <a class='w3-button' >X</a>---<a class='w3-button'>X</a>
+            </div>`
+          } else {
+            final = final + 
+            `<div class="w3-center">
+            <a class='w3-button' onclick='goPage(${page-1})'><</a>---<a class='w3-button' onclick='goPage(${page+1})'>></a>
+            </div>`
+          }
+
           document.getElementById('posts').innerHTML = final;
         });
       }
