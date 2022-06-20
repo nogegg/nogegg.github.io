@@ -1,5 +1,11 @@
 [
     {
+        "id": "15",
+        "title": "Lich",
+        "date": "6/15/22",
+        "img": "static/lich.png"
+    },
+    {
         "id": "14",
         "title": "N'mhao (ffxiv)",
         "date": "5/12/22",
