@@ -1,5 +1,17 @@
 [
     {
+        "id": "17",
+        "title": "Robot 2",
+        "date": "8/9/22",
+        "img": "static/screenrobot_2.png"
+    },
+    {
+        "id": "16",
+        "title": "Robot 1",
+        "date": "8/9/22",
+        "img": "static/screenrobot_1.png"
+    },
+    {
         "id": "15",
         "title": "Lich",
         "date": "6/15/22",
