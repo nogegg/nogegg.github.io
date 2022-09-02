@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html><head><title>Blog Zone</title>
+
+  <meta content="Blog Zone" property="og:title">
+  <meta content="The pit where I keep all my posts" property="og:description">
+  <meta content="Blog Zone" property="og:site_name">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -8,15 +13,25 @@
     <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+    .fakewindow {
+      border: 3px solid #f1f1f1;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+    p
+    {
+    margin:1px;
+    padding:1px;
+    }
     ::-webkit-scrollbar {
       width: 5px;
     }
     ::-webkit-scrollbar-thumb {
-      background: rgb(255,230,255);
+      background: rgb(228, 210, 231);
     }
     * {
         font-family: "DisposableDroid BB";
-        color: rgb(0, 0, 0);
+        color: rgb(228, 210, 231);
         font-size: 22px;
       }
       img {
@@ -29,66 +44,73 @@
     </head><body onload="loadPosts()" style="background-color: rgb(0, 0, 0);">
     
     <!--<div class="w3-padding w3-center w3-text-black" style="background-color: bisque;"><b class="w3-text-black">/////</b> I'm still making this site <b class="w3-text-black">\\\\\</b></div>-->
-    <div class="w3-animate-top w3-padding-large w3-center" style="border-width: 5px; border-style: none none double none; border-color: rgb(0, 0, 0); background-color: rgb(201, 160, 201);">
-      <a style="">*</a>
-      <a class="w3-button" href="../blog"> Home </a>
-      <a style="">*</a>
-      <a class="w3-button" href="../links"> Link Zone </a>
-      <a style="">*</a>
-      <a class="w3-button" href="../kit"> Kit </a>
-      <a style="">*</a>
-      <a class="w3-button" href="../art"> Art </a>
-      <a style="">*</a>
-      </div>
+    <div class="w3-animate-top" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: none solid solid solid; border-color: rgb(228, 210, 231);">
+        
+        <img class="" style="padding-left: 25px; max-height:22px" src="../images/mini-icon.png">
+        
+        <a style="color:black; padding-right: 50px" class="w3-button" href="../blog"> Kab's Corner </a>
+
+        <a style="color:black" class="w3-button" href="../blog"> Home </a>
+        <a style="color:black">*</a>
+        <a style="color:black" class="w3-button" href="../links"> Link Zone </a>
+        <a style="color:black">*</a>
+        <a style="color:black" class="w3-button" href="../kit"> Kit </a>
+        <a style="color:black">*</a>
+        <a style="color:black" class="w3-button" href="../art"> Art </a>
+    </div>
     
     <div class="w3-content w3-margin-top" style="max-width:1000px;">
     
       <div class="">
-        <div class="w3-third" style="">
-          <div class="w3-padding w3-animate-top w3-card-4" style="border-radius: 2px; background-color: rgb(201, 160, 201); max-width:500px;">
-            <img class="w3-center" style="max-width:100%" src="../images/icon3-alt.png">
-          </div>
-
-          <p></p>
-
-          <div class="w3-padding w3-animate-top w3-card-4" style="border-radius: 2px; background-color: rgb(201, 160, 201); max-width:500px;">
-            <center><img class="w3-center w3-padding-large w3-margin-bottom" style="width:75%; border-radius: 50%" src="../avys/avy6-alt.png"></center>
-            <p class="w3-margin"><b>Age:</b> 21</p>
-            <p class="w3-margin"><b>Pronouns:</b> I dunno</p>
-            <p class="w3-margin"><b>Discord:</b> kab#9488</p>
-            <p class="w3-margin"><b>Twitter:</b> <a href="https://twitter.com/_avenu">@_avenu</a></p>
-            <p class="w3-margin"><b>Github:</b> <a href="https://github.com/2tuu">2tuu</a></p>
-          </div>
-
-          <br>
-
-          <div class="w3-padding w3-animate-top w3-card-4" style="border-radius: 2px; background-color: rgb(201, 160, 201); max-width:500px;">
-            <p class="w3-margin"><b>Jobs:</b></p>
-            <p><b>- Artist (~6yrs)</b> - Freelance</p>
-            <p><b>- Stock Photo Contributor (~4yrs)</b> - Shutterstock</p>
-            <p><b>- Hardware Validation Tech (~1yr)</b> - [REDACTED]</p>
-          </div>
-
-          <br>
-
-          <div class="w3-padding w3-animate-top w3-card-4" style="border-radius: 2px; background-color: rgb(201, 160, 201); max-width:500px;">
-            <p class="w3-margin"><b>Who's this?</b></p>
-            <p class="w3-margin">Helo, I'm an artist and a hobby programmer, I go by a couple names but mostly just Kab.</p>
-            <p class="w3-margin">I've been drawing for a while, programming for just as long. I'd like to know how to design my own site and program my own stuff, but I don't want to do it for a living, it's more just something I enjoy doing for myself.</p>
-            <p class="w3-margin">This site was mostly just to help me practice web backend code (can't anymore cause this code is static), but I'll probably use it to post about my projects and whatever else I'd like to post.</p>   
+        <div class="w3-third">
+          <div class="w3-animate-top w3-card-4" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
+            <p style="margin-left:8px; color:black;">* Bio</p>
+            <div class="w3-padding" style="background-color: rgb(0, 0, 0); border-width: 5px; border-style: solid none none none;">
+              <img class="" style="float: right; margin: auto; width: 40%;" src="../avys/avy-white.png">
+              <p><b>Age:</b> 21</p>
+              <p><b>Pronouns:</b> I dunno</p>
+              <p><b>Twitter:</b> <a href="https://twitter.com/_avenu">@_avenu</a></p>
+              <p><b>Github:</b> <a href="https://github.com/2tuu">2tuu</a></p>
+           </div>
         </div><br>
-        </div>
+
+        <div class="w3-animate-top w3-card-4" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
+          <p style="margin-left:8px; color:black;">* Jobs</p>
+          <div class="w3-padding" style="background-color: rgb(0, 0, 0); border-width: 5px; border-style: solid none none none;">
+            <p><b>- Artist (~6yrs)</b> - Personal</p>
+            <p><b>- Stock Photo Contributor (~4yrs)</b> - Shutterstock</p>
+            <p><b>- Hardware Validation Tech (~1yr)</b> - [REDACTED]</p>    
+          </div>
+        </div><br>
+
+        <div class="w3-animate-top w3-card-4" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
+          <p style="margin-left:8px; color:black;">* About</p>
+          <div class="w3-padding" style="background-color: rgb(0, 0, 0); border-width: 5px; border-style: solid none none none;">
+            <p>Helo, I'm an artist and a hobby programmer, I go by a couple names but mostly just Kab.</p>
+            <p>I've been drawing for a while, programming for just as long. I'd like to know how to design my own site and program my own stuff, but I don't want to do it for a living, it's more just something I enjoy doing for myself.</p>
+            <p>This site was mostly just to help me practice web backend code (can't anymore cause this code is static), but I'll probably use it to post about my projects and whatever else I'd like to post.</p>
+          </div>
+        </div><br>
+      </div>
     
-     <div class="w3-twothird">
-      <div class="w3-animate-top w3-container w3-card" style="margin-left:17px; background-color: rgb(0, 0, 0);">
-        <center><div class="w3-padding w3-animate-top w3-card-4" style="border-radius: 2px; background-color: rgb(201, 160, 201);"><img class="w3-margin-top" style="" src="../images/postsicon-alt.png"><p></div></center>
-        <br>
-        <center><div id="posts" class="w3-padding w3-animate-top w3-card-4" style="border-radius: 2px; background-color: rgb(201, 160, 201);">Posts will only generate with javascript enabled<p></div></center>
+    <div class="w3-twothird" style="border-width: 5px; border-style: none none none none; border-color: rgb(228, 210, 231);">
+        <div class="w3-animate-top w3-card-4 w3-padding" style="border-width: 5px; border-style: none none none none;">
+
+          <div class="w3-animate-top w3-container w3-card">
+            <br>
+          <center><p style="font-size:77px;">Posts 'n Projects</p></center>
+            <p style="overflow: hidden; font-size:50px;" class="w3-center">───────────────────────────────────────────────────</p>
+    
+            <div id="posts">
+              <center><p>Posts will not generate unless javascript is enabled</p></center>
+              <center><img src="static/loading.gif" class="w3-center"></center>
+            </div>
+
+        </div>
       </div>
 
-      
-      </div>
     </div>
+
   </div>
 </div>
     
@@ -109,7 +131,7 @@
             <p><b>Title:</b> ${e.title} - ${e.date}</p>
             <p><b>Content:</b> ${e.content}</p>
             <br>
-            <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>`
+            <p style="overflow: hidden; font-size:50px;" class="w3-center">─────────────────────────────────────────────────── *** ───────────────────────────────────────────────────</p>`
           })
           document.getElementById('posts').innerHTML = final;
         });
