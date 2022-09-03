@@ -94,12 +94,17 @@
       </div>
     
     <div class="w3-twothird" style="border-width: 5px; border-style: none none none none; border-color: rgb(228, 210, 231);">
-        <div class="w3-animate-top w3-card-4 w3-padding" style="border-width: 5px; border-style: none none none none;">
+        <div class="w3-animate-top " style="border-width: 5px; border-style: none none none none;">
 
-          <div class="w3-animate-top w3-container w3-card">
+          <div class="w3-animate-top w3-container">
+            <div class="w3-animate-top w3-card-4" style="min-width: 100%; background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
+              <p style="margin-left:8px; color:black;">* Title</p>
+              <div class="" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid none none none;">
+                <center><p style="font-size:77px; color:black;">Art Zone</p></center>
+              </div>
+            </div>
+
             <br>
-          <center><p style="font-size:77px;">Art Zone</p></center>
-            <p style="overflow: hidden; font-size:50px;" class="w3-center">───────────────────────────────────────────────────</p>
     
             <div id="posts">
               <center><p>Posts will not generate unless javascript is enabled</p></center>
@@ -114,10 +119,9 @@
   </div>
 </div>
     
-    <footer class="w3-padding w3-container w3-black w3-center w3-margin-top">
-        <a href="https://twitter.com/_avenu" class="fa w3-button fa-twitter w3-hover-opacity"></a>
-        <a href="https://github.com/2tuu" class="fa w3-button fa-github w3-hover-opacity"></a>
-    </footer>
+<footer class="w3-padding w3-container w3-black w3-center w3-margin-top" style="color: black">
+  <div style="background-color: rgb(228, 210, 231); color:black">(c) 2022 A.W. - All Rights Reserved</div>
+</footer>
     
     </body></html>
 
@@ -176,14 +180,16 @@
               `
             } else {
               pages[page-1].forEach(e=>{
-              final = final + 
-              `<br>
-              <a id=post${e.id}><b>Title:</b> ${e.title} - ${e.date}</a>
-              <br>
-              <p><img style="width:100%" src="${e.img}"></p>
-              <br>
-              <a class="w3-button" href='post.html?pageref=${page}&post=${e.id}' style="width:100%; border-radius:10px">* View Post *</a>
-              <p style="overflow: hidden; font-size:50px;" class="w3-center">─────────────────────────────────────────────────── *** ───────────────────────────────────────────────────</p>`        
+
+              final = final + `
+                <div class="w3-animate-top" style="min-width: 100%; background-color: black; border-width: 1px; border-style: solid solid solid solid; max-width:500px;">
+                  <p id=post${e.id} style="margin-left:8px; color: rgb(228, 210, 231);">* ${e.title} - ${e.date}</p>
+                  <div class="" style="background-color: black; border-width: 1px; border-style: solid none solid none;">
+                    <p><img style="width:100%" src="${e.img}"></p>
+                  </div>
+                  <a class="w3-button" href='post.html?pageref=${page}&post=${e.id}' style="width:100%;">* View Post *</a>
+                </div><br>
+              `
               })
             }
   

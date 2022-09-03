@@ -62,13 +62,14 @@
     <div class="w3-content w3-margin-top" style="max-width:1000px;">
     
       <div class="">
-        <div class="w3-third">
+        <div class="w3-third w3-padding">
           <div class="w3-animate-top w3-card-4" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
             <p style="margin-left:8px; color:black;">* Bio</p>
             <div class="w3-padding" style="background-color: rgb(0, 0, 0); border-width: 5px; border-style: solid none none none;">
-              <img class="" style="float: right; margin: auto; width: 40%;" src="../avys/avy-white.png">
+              <center><p><img class="" style=" width: 40%;" src="../avys/avy-white.png"></p></center>
+              <br>
               <p><b>Age:</b> 21</p>
-              <p><b>Pronouns:</b> I dunno</p>
+              <p><b>Pronouns:</b> N/A</p>
               <p><b>Twitter:</b> <a href="https://twitter.com/_avenu">@_avenu</a></p>
               <p><b>Github:</b> <a href="https://github.com/2tuu">2tuu</a></p>
            </div>
@@ -87,36 +88,45 @@
           <p style="margin-left:8px; color:black;">* About</p>
           <div class="w3-padding" style="background-color: rgb(0, 0, 0); border-width: 5px; border-style: solid none none none;">
             <p>Helo, I'm an artist and a hobby programmer, I go by a couple names but mostly just Kab.</p>
+            <center>***</center>
             <p>I've been drawing for a while, programming for just as long. I'd like to know how to design my own site and program my own stuff, but I don't want to do it for a living, it's more just something I enjoy doing for myself.</p>
+            <center>***</center>
             <p>This site was mostly just to help me practice web backend code (can't anymore cause this code is static), but I'll probably use it to post about my projects and whatever else I'd like to post.</p>
+          </div>
+        </div><br>
+
+        <div class="w3-animate-top w3-card-4" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
+          <p style="margin-left:8px; color:black;">* Credits</p>
+          <div class="w3-padding" style="background-color: rgb(0, 0, 0); border-width: 5px; border-style: solid none none none;">
+           <p>Blambot - <a href="https://www.1001fonts.com/disposabledroid-bb-font.html">Font</a></p>
+           <p>W3Schools - <a href="https://www.w3schools.com/w3css/w3css_downloads.asp">CSS Help</a></p>
           </div>
         </div><br>
       </div>
     
-    <div class="w3-twothird" style="border-width: 5px; border-style: none none none none; border-color: rgb(228, 210, 231);">
-        <div class="w3-animate-top w3-card-4 w3-padding" style="border-width: 5px; border-style: none none none none;">
+    <div class="w3-twothird w3-padding" style="">
 
-          <div class="w3-animate-top w3-container w3-card">
+            <div class="w3-animate-top" style="min-width: 100%; background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
+              <p style="margin-left:8px; color:black;">* Title</p>
+              <div class="" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid none none none;">
+                <center><p style="font-size:77px; color:black;">Posts 'n Projects</p></center>
+              </div>
+            </div>
+
             <br>
-          <center><p style="font-size:77px;">Posts 'n Projects</p></center>
-            <p style="overflow: hidden; font-size:50px;" class="w3-center">───────────────────────────────────────────────────</p>
     
             <div id="posts">
               <center><p>Posts will not generate unless javascript is enabled</p></center>
               <center><img src="static/loading.gif" class="w3-center"></center>
             </div>
 
-        </div>
-      </div>
-
     </div>
 
   </div>
 </div>
     
-    <footer class="w3-padding w3-container w3-black w3-center w3-margin-top">
-        <a href="https://twitter.com/_avenu" class="fa w3-button fa-twitter w3-hover-opacity"></a>
-        <a href="https://github.com/2tuu" class="fa w3-button fa-github w3-hover-opacity"></a>
+    <footer class="w3-padding w3-container w3-black w3-center w3-margin-top" style="color: black">
+        <div style="background-color: rgb(228, 210, 231); color:black">(c) 2022 A.W. - All Rights Reserved</div>
     </footer>
     
     </body></html>
@@ -127,11 +137,22 @@
         $.getJSON(["posts.json"], function(posts) {
           var final = '';
           posts.forEach(e=>{
+            /*
             final = final + `<br>
             <p><b>Title:</b> ${e.title} - ${e.date}</p>
             <p><b>Content:</b> ${e.content}</p>
             <br>
             <p style="overflow: hidden; font-size:50px;" class="w3-center">─────────────────────────────────────────────────── *** ───────────────────────────────────────────────────</p>`
+            */
+
+            final = final + `
+            <div class="w3-animate-top w3-card-4" style="min-width: 100%; background-color: black; border-width: 1px; border-style: solid solid solid solid; max-width:500px;">
+              <p style="margin-left:8px; color: rgb(228, 210, 231);">* ${e.title} - ${e.date}</p>
+              <div class="w3-padding" style="background-color: black; border-width: 1px; border-style: solid none none none;">
+                <p>${e.content}</p>
+              </div>
+            </div><br>
+            `
           })
           document.getElementById('posts').innerHTML = final;
         });
