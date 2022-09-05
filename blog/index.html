@@ -23,6 +23,18 @@
             display: none;
         }
       }
+      @media (max-width: 115px) {                  
+        .hide-extra-small {
+            display: none;
+        }
+      }
+      @media (min-width: 114px) {                  
+        .show-extra-small {
+            display: none;
+        }
+      }
+      
+
 
     p
     {
@@ -57,12 +69,16 @@
           <a style="color:black" class="w3-button" href="../art"> Art </a>
         </div>
         
-        <div class="show-only-small" id="buttons">
+        <div class="show-only-small hide-extra-small" id="buttons">
           <img class="" style="padding-left: 25px; max-height:22px" src="../images/mini-icon.png">
           <a style="color:black; padding-right: 50px" class="w3-button" href="../blog"> Kab's Corner </a>
           <a style="color:black" class="w3-button" href="../art"> Art </a>
           <a style="color:black">*</a>
           <a style="color:black" class="w3-button" href="../links"> Links</a>
+        </div>
+
+        <div class="show-extra-small">
+          <img class="" style="padding-left: 25px; max-height:22px" src="../images/mini-icon.png">
         </div>
     </div>
     
