@@ -17,6 +17,24 @@
     <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        @media (max-width: 767px) {
+            .hide-only-small {
+                display: none;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .show-only-small {
+                display: none;
+            }
+        }
+
+        @media (max-width: 110px) {
+            .hide-extra-small {
+                display: none;
+            }
+        }
+
         ::-webkit-scrollbar {
             width: 5px;
         }
@@ -46,27 +64,28 @@
 <body onload="loadPosts()" style="background-color: rgb(0, 0, 0);">
 
     <!--<div class="w3-padding w3-center w3-text-black" style="background-color: bisque;"><b class="w3-text-black">/////</b> I'm still making this site <b class="w3-text-black">\\\\\</b></div>-->
-    <div class="w3-animate-top w3-padding-large w3-center"
-        style="border-width: 5px; border-style: none none double none; border-color: rgb(255,230,255);">
-        <a style="">*</a>
-        <a class="w3-button" href="../blog"> Home </a>
-        <a style="">*</a>
-        <a class="w3-button" href="../links"> Link Zone </a>
-        <a style="">*</a>
-        <a class="w3-button" href="../kit"> Kit </a>
-        <a style="">*</a>
-        <a class="w3-button" href="../art"> Art </a>
-        <a style="">*</a>
+    <div class="w3-animate-top"
+        style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: none solid solid solid; border-color: rgb(228, 210, 231);">
+        <div class="" id="buttons">
+            <img class="" style="padding-left: 25px; max-height:22px" src="../images/mini-icon.png">
+            <a style="color:black; padding-right: 50px" class="w3-button" href="../blog"> Kab's Corner </a>
+        </div>
     </div>
 
     <div class="w3-content w3-margin-top" style="max-width:1500px;">
         <div id="post">
             <div id="posts">
-                <center><p>Posts will not generate unless javascript is enabled</p></center>
+                <center>
+                    <p>Posts will not generate unless javascript is enabled</p>
+                </center>
                 <center><img src="static/loading.gif" class="w3-center"></center>
-              </div>
+            </div>
         </div>
     </div>
+
+    <footer class="w3-padding w3-container w3-black w3-center w3-margin-top" style="color: black">
+        <div style="background-color: rgb(228, 210, 231); color:black">(c) 2022 A.W. - All Rights Reserved</div>
+    </footer>
 
     <script>
 
@@ -113,9 +132,12 @@
 
                 final = `
                 <center><img style="max-width:100%" src=${embedImage}></center>
-                <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
-                <center><a href='./?page=${refpage}#${refID}' class="w3-center">* Go Back *</a></center>
-                <p style="overflow: hidden;" class="w3-center">═════════════════════════════════════════</p>
+                <br>
+                <center>
+                    <div class="" style="max-width: 200px; background-color: black; border-width: 1px; border-style: solid solid solid solid;">
+                        <a class="w3-button" href='./?page=${refpage}#${refID}' style="min-width: 100%">* Go Back *</a>
+                    </div>
+                </center>
                 `
 
                 document.title = embedTitle + ' - Art Zone';

@@ -1,232 +1,261 @@
 <!DOCTYPE html>
-<html><head><title>Blog Zone</title>
+<html>
+
+<head>
+  <title>Blog Zone</title>
 
   <meta content="Blog Zone" property="og:title">
   <meta content="The pit where I keep all my posts" property="og:description">
   <meta content="Blog Zone" property="og:site_name">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="shortcut icon" href="https://2tu.dev/avys/avy6.png" type="image/x-icon">  
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-    <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    @media (max-width: 767px) {                  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="shortcut icon" href="https://2tu.dev/avys/avy6.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @media (max-width: 767px) {
       .hide-only-small {
-          display: none;
+        display: none;
       }
     }
-    @media (min-width: 768px) {                  
-      .show-only-small {
-          display: none;
-      }
-    }
-    @media (max-width: 110px) {                  
-        .hide-extra-small {
-            display: none;
-        }
-      }
 
-    p
-    {
-    margin:1px;
-    padding:1px;
-    }
-    * {
-        font-family: "DisposableDroid BB";
-        color: rgb(228, 210, 231);
-        font-size: 22px;
+    @media (min-width: 768px) {
+      .show-only-small {
+        display: none;
       }
-      img {
-        -webkit-backface-visibility: hidden; 
-        -ms-transform: translateZ(0); /* IE 9 */
-        -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
-        transform: translateZ(0);
     }
-    </style>
-    </head><body onload="loadPosts()" style="background-color: rgb(0, 0, 0);">
-    
-    <!--<div class="w3-padding w3-center w3-text-black" style="background-color: bisque;"><b class="w3-text-black">/////</b> I'm still making this site <b class="w3-text-black">\\\\\</b></div>-->
-    <div class="w3-animate-top" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: none solid solid solid; border-color: rgb(228, 210, 231);">
-      <div class="hide-only-small" id="buttons">
-        <img class="" style="padding-left: 25px; max-height:22px" src="../images/mini-icon.png">
-        <a style="color:black; padding-right: 50px" class="w3-button" href="../blog"> Kab's Corner </a>
-        <a style="color:black" class="w3-button" href="../blog"> Home </a>
-        <a style="color:black">*</a>
-        <a style="color:black" class="w3-button" href="../links"> Link Zone </a>
-        <a style="color:black">*</a>
-        <a style="color:black" class="w3-button" href="../kit"> Kit </a>
-        <a style="color:black">*</a>
-        <a style="color:black" class="w3-button" href="../art"> Art </a>
-      </div>
-      
-      <div class="show-only-small" id="buttons">
-        <img class="" style="padding-left: 25px; max-height:22px" src="../images/mini-icon.png">
-        <a style="color:black; padding-right: 50px" class="w3-button" href="../blog"> Kab's Corner </a>
-        <a style="color:black" class="w3-button" href="../blog"> Home </a>
-      </div>
+
+    @media (max-width: 110px) {
+      .hide-extra-small {
+        display: none;
+      }
+    }
+
+    p {
+      margin: 1px;
+      padding: 1px;
+    }
+
+    * {
+      font-family: "DisposableDroid BB";
+      color: rgb(197, 176, 201);
+      font-size: 22px;
+    }
+
+    img {
+      -webkit-backface-visibility: hidden;
+      -ms-transform: translateZ(0);
+      /* IE 9 */
+      -webkit-transform: translateZ(0);
+      /* Chrome, Safari, Opera */
+      transform: translateZ(0);
+    }
+  </style>
+</head>
+
+<body onload="loadPosts()" style="background-color: rgb(63, 50, 66);">
+
+  <!--<div class="w3-padding w3-center w3-text-rgb(63, 50, 66)" style="background-color: bisque;"><b class="w3-text-rgb(63, 50, 66)">/////</b> I'm still making this site <b class="w3-text-rgb(63, 50, 66)">\\\\\</b></div>-->
+  <div class="w3-animate-top"
+    style="background-color: rgb(197, 176, 201); border-width: 5px; border-style: none solid solid solid; border-color: rgb(197, 176, 201);">
+    <div class="hide-only-small" id="buttons">
+      <img class="" style="padding-left: 25px; max-height:22px" src="../images/mini-icon.png">
+      <a style="color:rgb(63, 50, 66); padding-right: 50px" class="w3-button" href="../blog"> Kab's Corner </a>
+      <a style="color:rgb(63, 50, 66)" class="w3-button" href="../blog"> Home </a>
+      <a style="color:rgb(63, 50, 66)">*</a>
+      <a style="color:rgb(63, 50, 66)" class="w3-button" href="../links"> Link Zone </a>
+      <a style="color:rgb(63, 50, 66)">*</a>
+      <a style="color:rgb(63, 50, 66)" class="w3-button" href="../kit"> Kit </a>
+      <a style="color:rgb(63, 50, 66)">*</a>
+      <a style="color:rgb(63, 50, 66)" class="w3-button" href="../art"> Art </a>
     </div>
-    
-    <div class="w3-content w3-margin-top" style="max-width:1000px;">
-    
-      <div class="">
-        <div class="w3-third w3-hide-small">
-          <div class="w3-animate-top w3-card-4" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
-            <p style="margin-left:8px; color:black;">* Bio</p>
-            <div class="w3-padding" style="background-color: rgb(0, 0, 0); border-width: 5px; border-style: solid none none none;">
-              <img class="" style="float: right; margin: auto; width: 40%;" src="../avys/avy-white.png">
-              <p><b>Age:</b> 21</p>
-              <p><b>Pronouns:</b> I dunno</p>
-              <p><b>Twitter:</b> <a href="https://twitter.com/_avenu">@_avenu</a></p>
-              <p><b>Github:</b> <a href="https://github.com/2tuu">2tuu</a></p>
-           </div>
+
+    <div class="show-only-small" id="buttons">
+      <img class="" style="padding-left: 25px; max-height:22px" src="../images/mini-icon.png">
+      <a style="color:rgb(63, 50, 66); padding-right: 50px" class="w3-button" href="../blog"> Kab's Corner </a>
+      <a style="color:rgb(63, 50, 66)" class="w3-button" href="../blog"> Home </a>
+    </div>
+  </div>
+
+  <div class="w3-content w3-margin-top" style="max-width:1000px;">
+
+    <div class="">
+      <div class="w3-third w3-hide-small">
+        <div class="w3-animate-top "
+          style="background-color: rgb(197, 176, 201); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
+          <p style="margin-left:8px; color:rgb(63, 50, 66);">* Bio</p>
+          <div class="w3-padding"
+            style="background-color: rgb(63, 50, 66); border-width: 5px; border-style: solid none none none;">
+            <img class="" style="float: right; margin: auto; width: 40%;" src="../avys/avy-white.png">
+            <p><b>Age:</b> 21</p>
+            <p><b>Pronouns:</b> I dunno</p>
+            <p><b>Twitter:</b> <a href="https://twitter.com/_avenu">@_avenu</a></p>
+            <p><b>Github:</b> <a href="https://github.com/2tuu">2tuu</a></p>
+          </div>
         </div><br>
 
-        <div class="w3-animate-top w3-card-4" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
-          <p style="margin-left:8px; color:black;">* Jobs</p>
-          <div class="w3-padding" style="background-color: rgb(0, 0, 0); border-width: 5px; border-style: solid none none none;">
+        <div class="w3-animate-top "
+          style="background-color: rgb(197, 176, 201); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
+          <p style="margin-left:8px; color:rgb(63, 50, 66);">* Jobs</p>
+          <div class="w3-padding"
+            style="background-color: rgb(63, 50, 66); border-width: 5px; border-style: solid none none none;">
             <p><b>- Artist (~6yrs)</b> - Personal</p>
             <p><b>- Stock Photo Contributor (~4yrs)</b> - Shutterstock</p>
-            <p><b>- Hardware Validation Tech (~1yr)</b> - [REDACTED]</p>    
+            <p><b>- Hardware Validation Tech (~1yr)</b> - [REDACTED]</p>
           </div>
         </div><br>
 
-        <div class="w3-animate-top w3-card-4" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
-          <p style="margin-left:8px; color:black;">* About</p>
-          <div class="w3-padding" style="background-color: rgb(0, 0, 0); border-width: 5px; border-style: solid none none none;">
+        <div class="w3-animate-top "
+          style="background-color: rgb(197, 176, 201); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
+          <p style="margin-left:8px; color:rgb(63, 50, 66);">* About</p>
+          <div class="w3-padding"
+            style="background-color: rgb(63, 50, 66); border-width: 5px; border-style: solid none none none;">
             <p>Helo, I'm an artist and a hobby programmer, I go by a couple names but mostly just Kab.</p>
-            <p>I've been drawing for a while, programming for just as long. I'd like to know how to design my own site and program my own stuff, but I don't want to do it for a living, it's more just something I enjoy doing for myself.</p>
-            <p>This site was mostly just to help me practice web backend code (can't anymore cause this code is static), but I'll probably use it to post about my projects and whatever else I'd like to post.</p>
+            <p>I've been drawing for a while, programming for just as long. I'd like to know how to design my own site
+              and program my own stuff, but I don't want to do it for a living, it's more just something I enjoy doing
+              for myself.</p>
+            <p>This site was mostly just to help me practice web backend code (can't anymore cause this code is static),
+              but I'll probably use it to post about my projects and whatever else I'd like to post.</p>
           </div>
         </div><br>
       </div>
-    
-    <div class="w3-twothird" style="border-width: 5px; border-style: none none none none; border-color: rgb(228, 210, 231);">
+
+      <div class="w3-twothird"
+        style="border-width: 5px; border-style: none none none none; border-color: rgb(197, 176, 201);">
         <div class="w3-animate-top " style="border-width: 5px; border-style: none none none none;">
 
           <div class="w3-animate-top w3-container">
-            <div class="w3-animate-top w3-card-4" style="min-width: 100%; background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
-              <p style="margin-left:8px; color:black;">* Title</p>
-              <div class="" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: solid none none none;">
-                <center><p style="font-size:77px; color:black;">Art Zone</p></center>
+            <div class="w3-animate-top "
+              style="min-width: 100%; background-color: rgb(197, 176, 201); border-width: 5px; border-style: solid solid solid solid; max-width:500px;">
+              <p style="margin-left:8px; color:rgb(63, 50, 66);">* Title</p>
+              <div class=""
+                style="background-color: rgb(197, 176, 201); border-width: 5px; border-style: solid none none none;">
+                <center>
+                  <p style="font-size:77px; color:rgb(63, 50, 66);">Art Zone</p>
+                </center>
               </div>
             </div>
 
             <br>
-    
+
             <div id="posts">
-              <center><p>Posts will not generate unless javascript is enabled</p></center>
+              <center>
+                <p>Posts will not generate unless javascript is enabled</p>
+              </center>
               <center><img src="static/loading.gif" class="w3-center"></center>
             </div>
 
+          </div>
         </div>
+
       </div>
 
     </div>
-
   </div>
-</div>
-    
-<footer class="w3-padding w3-container w3-black w3-center w3-margin-top" style="color: black">
-  <div style="background-color: rgb(228, 210, 231); color:black">(c) 2022 A.W. - All Rights Reserved</div>
-</footer>
-    
-    </body></html>
 
-    
-    <script>
-        function goPage(page){
-          window.location = window.location.href.split("?")[0] + '?page=' + page;;
+  <footer class="w3-padding w3-container w3-rgb(63, 50, 66) w3-center w3-margin-top" style="color: rgb(63, 50, 66)">
+    <div style="background-color: rgb(197, 176, 201); color:rgb(63, 50, 66)">(c) 2022 A.W. - All Rights Reserved</div>
+  </footer>
+
+</body>
+
+</html>
+
+
+<script>
+  function goPage(page) {
+    window.location = window.location.href.split("?")[0] + '?page=' + page;;
+  }
+
+  function loadPosts() {
+    $.getJSON(["artposts.json"], function (posts) {
+      var pages = [];
+      var page = 1;
+      const chunk = 4;
+      for (let i = 0; i < posts.length; i += chunk) {
+        const thisChunk = posts.slice(i, i + chunk);
+        pages.push(thisChunk);
+      }
+
+      function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+
+      if (getParameterByName('page')) {
+        var p = getParameterByName('page');
+        if (isNaN(p) || p > pages.length) {
+          page = 'err';
+        } else {
+          page = parseInt(p);
         }
-  
-        function loadPosts() {
-          $.getJSON(["artposts.json"], function(posts) {
-            var pages = [];
-            var page = 1;
-            const chunk = 4;
-            for (let i = 0; i < posts.length; i += chunk) {
-                const thisChunk = posts.slice(i, i + chunk);
-                      pages.push(thisChunk);
-            }
-  
-            function getParameterByName(name, url = window.location.href) {
-                name = name.replace(/[\[\]]/g, '\\$&');
-                var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-                    results = regex.exec(url);
-                if (!results) return null;
-                if (!results[2]) return '';
-                return decodeURIComponent(results[2].replace(/\+/g, ' '));
-            }
-  
-            if(getParameterByName('page')){
-              var p = getParameterByName('page');
-              if(isNaN(p) || p>pages.length){
-                page = 'err';
-              } else {
-                page = parseInt(p);
-              }
-            }
-  
-            var lastpage = false;
-            if(page != 'err'){
-              if(page+1 > pages.length){
-                lastpage = true;
-              }
-            }
-  
-            var firstpage = false;
-            if(page != 'err'){
-              if(page == 1){
-                firstpage = true;
-              }
-            }
-  
-            var final = '';
-            if(page == 'err'){
-              final = `
+      }
+
+      var lastpage = false;
+      if (page != 'err') {
+        if (page + 1 > pages.length) {
+          lastpage = true;
+        }
+      }
+
+      var firstpage = false;
+      if (page != 'err') {
+        if (page == 1) {
+          firstpage = true;
+        }
+      }
+
+      var final = '';
+      if (page == 'err') {
+        final = `
               put error page code here
               `
-            } else {
-              pages[page-1].forEach(e=>{
+      } else {
+        pages[page - 1].forEach(e => {
 
-              final = final + `
-                <div class="w3-animate-top" style="min-width: 100%; background-color: black; border-width: 1px; border-style: solid solid solid solid; max-width:500px;">
-                  <p id=post${e.id} style="margin-left:8px; color: rgb(228, 210, 231);">* ${e.title} - ${e.date}</p>
-                  <div class="" style="background-color: black; border-width: 1px; border-style: solid none solid none;">
+          final = final + `
+                <div class="w3-animate-top" style="min-width: 100%; background-color: rgb(63, 50, 66); border-width: 1px; border-style: solid solid solid solid; max-width:500px;">
+                  <p id=post${e.id} style="margin-left:8px; color: rgb(197, 176, 201);">* ${e.title} - ${e.date}</p>
+                  <div class="" style="background-color: rgb(63, 50, 66); border-width: 1px; border-style: solid none solid none;">
                     <p><img style="width:100%" src="${e.img}"></p>
                   </div>
                   <a class="w3-button" href='post.html?pageref=${page}&post=${e.id}' style="width:100%;">* View Post *</a>
                 </div><br>
               `
-              })
-            }
-  
-          if(firstpage){
-            final = final + 
-            `<div class="w3-center">
-              <a class='w3-button' >X--</a>Page ${page}<a class='w3-button' onclick='goPage(${page+1})'>--></a>
+        })
+      }
+
+      if (firstpage) {
+        final = final +
+          `<div class="w3-center">
+              <a class='w3-button' >X--</a>Page ${page}<a class='w3-button' onclick='goPage(${page + 1})'>--></a>
               </div>`
-            } else if(lastpage){
-              final = final + 
-              `<div class="w3-center">
-              <a class='w3-button' onclick='goPage(${page-1})'><--</a>Page ${page}<a class='w3-button'>--X</a>
+      } else if (lastpage) {
+        final = final +
+          `<div class="w3-center">
+              <a class='w3-button' onclick='goPage(${page - 1})'><--</a>Page ${page}<a class='w3-button'>--X</a>
               </div>`
-            } else if(page == 'err'){
-              final = final + 
-              `<div class="w3-center">
+      } else if (page == 'err') {
+        final = final +
+          `<div class="w3-center">
               <a class='w3-button' >X--</a> Page Error <a class='w3-button'>--X</a>
               </div>`
-            } else {
-              final = final + 
-              `<div class="w3-center">
-              <a class='w3-button' onclick='goPage(${page-1})'><--</a>Page ${page}<a class='w3-button' onclick='goPage(${page+1})'>--></a>
+      } else {
+        final = final +
+          `<div class="w3-center">
+              <a class='w3-button' onclick='goPage(${page - 1})'><--</a>Page ${page}<a class='w3-button' onclick='goPage(${page + 1})'>--></a>
               </div>`
-            }
-  
-            document.getElementById('posts').innerHTML = final;
-          });
-        }
-  
-      </script>
+      }
+
+      document.getElementById('posts').innerHTML = final;
+    });
+  }
+
+</script>
