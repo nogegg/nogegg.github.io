@@ -13,21 +13,20 @@
     <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    .fakewindow {
-      border: 3px solid #f1f1f1;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
+    @media (max-width: 767px) {                  
+      .hide-only-small {
+          display: none;
+      }
+    }
+    @media (min-width: 768px) {                  
+      .show-only-small {
+          display: none;
+      }
     }
     p
     {
     margin:1px;
     padding:1px;
-    }
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: rgb(228, 210, 231);
     }
     * {
         font-family: "DisposableDroid BB";
@@ -45,11 +44,9 @@
     
     <!--<div class="w3-padding w3-center w3-text-black" style="background-color: bisque;"><b class="w3-text-black">/////</b> I'm still making this site <b class="w3-text-black">\\\\\</b></div>-->
     <div class="w3-animate-top" style="background-color: rgb(228, 210, 231); border-width: 5px; border-style: none solid solid solid; border-color: rgb(228, 210, 231);">
-        
+      <div class="hide-only-small" id="buttons">
         <img class="" style="padding-left: 25px; max-height:22px" src="../images/mini-icon.png">
-        
         <a style="color:black; padding-right: 50px" class="w3-button" href="../blog"> Kab's Corner </a>
-
         <a style="color:black" class="w3-button" href="../blog"> Home </a>
         <a style="color:black">*</a>
         <a style="color:black" class="w3-button" href="../links"> Link Zone </a>
@@ -57,6 +54,15 @@
         <a style="color:black" class="w3-button" href="../kit"> Kit </a>
         <a style="color:black">*</a>
         <a style="color:black" class="w3-button" href="../art"> Art </a>
+      </div>
+      
+      <div class="show-only-small" id="buttons">
+        <img class="" style="padding-left: 25px; max-height:22px" src="../images/mini-icon.png">
+        <a style="color:black; padding-right: 50px" class="w3-button" href="../blog"> Kab's Corner </a>
+        <a style="color:black" class="w3-button" href="../art"> Art </a>
+        <a style="color:black">*</a>
+        <a style="color:black" class="w3-button" href="../links"> Links</a>
+      </div>
     </div>
     
     <div class="w3-content w3-margin-top" style="max-width:1000px;">
