@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blog Zone</title>
+
+  <meta content="Blog Zone" property="og:title">
+  <meta content="The pit where I keep all my posts" property="og:description">
+  <meta content="Blog Zone" property="og:site_name">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="shortcut icon" href="https://2tu.dev/avys/avy6.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @media (max-width: 767px) {
+      .hide-only-small {
+        display: none;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .show-only-small {
+        display: none;
+      }
+    }
+
+    @media (max-width: 110px) {
+      .hide-extra-small {
+        display: none;
+      }
+    }
+
+    p {
+      margin: 1px;
+      padding: 1px;
+    }
+
+    * {
+      font-family: "DisposableDroid BB";
+      color: rgba(27,32,41,255);
+      font-size: 16px;
+    }
+
+    img {
+      -webkit-backface-visibility: hidden;
+      -ms-transform: translateZ(0);
+      /* IE 9 */
+      -webkit-transform: translateZ(0);
+      /* Chrome, Safari, Opera */
+      transform: translateZ(0);
+    }
+
+    #wrap { width: 600px; height: 390px; padding: 0; overflow: hidden; }
+    #frame { width: 800px; height: 520px; border: 1px solid black; }
+    #frame {
+        -ms-zoom: 0.5;
+        -moz-transform: scale(0.5);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.5);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+    }
+  </style>
+</head>
+
+<body onload="" style="background-color: rgb(0, 0, 0);">
+
+  <div class="w3-content w3-margin-top" style="width:100%">
+    <div class="" style="">
+      <div class="w3-margin-top w3-third w3-hide-small">
+        <div class="w3-animate-top " style="background-color: rgba(27,32,41,255); border-width: 5px; border-style: solid solid solid solid; ">
+          <p style="margin-left:8px; color:rgb(255, 255, 255);">* Music</p>
+          <div style="height:80px" class="w3-padding w3-green">
+          </div>
+        </div><br>
+
+        <div class="w3-animate-top" style="background-color: rgba(27,32,41,255); border-width: 5px; border-style: solid solid solid solid;">
+          <p style="margin-left:8px; color:rgb(255, 255, 255);">* Chat</p>
+          <div class="" style="height:364px">
+            <iframe id="frame" style="background-color: rgba(27,32,41,255); width:200%; height:200%;" src="https://picarto.tv/obschat/kabkab/public" title="chat"></iframe> 
+          </div>
+        </div><br>
+
+        </div>
+      </div>
+
+      <div class="w3-margin-top w3-twothird" style="border-width: 5px; border-style: none none none none; border-color: rgba(27,32,41,255);">
+        <div class="w3-animate-top " style="border-width: 5px; border-style: none none none none;">
+
+          <div class="w3-animate-top w3-container">
+            <div class="w3-animate-top " style="min-width: 100%;  background-color: rgba(27,32,41,255); border-width: 5px; border-style: solid solid solid solid; ">
+              <p style="margin-left:8px; color:rgb(255, 255, 255);">* Stream</p>
+              <div id="stream" class=""style="background-color: rgba(27,32,41,255); border-width: 5px; border-style: solid none none none;">
+                    <div style="height:461px;" class="w3-padding w3-green">
+                    </div>
+                    <a class="w3-text-black w3-button" onclick="height(10)">+</a><a class="w3-text-black w3-button" onclick="height(-10)">-</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+<script>
+
+var h=450;
+
+function height(add){
+    h = h + add;
+
+    document.getElementById('stream').innerHTML = `
+    <div style="height:${h}px;" class="w3-padding w3-green">
+                    </div>
+    <a class="w3-text-black w3-button" onclick="height(10)">+</a><a class="w3-text-black w3-button" onclick="height(-10)">-</a>
+    `;
+}
+
+</script>
