@@ -11,7 +11,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="shortcut icon" href="https://2tu.dev/avys/avy6.png" type="image/x-icon">
+  <link rel="shortcut icon" href="https://avenu.art/avys/avy6.png" type="image/x-icon">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -81,8 +81,11 @@
 
         <div class="w3-animate-top" style="background-color: rgba(27,32,41,255); border-width: 5px; border-style: solid solid solid solid;">
           <p style="margin-left:8px; color:rgb(255, 255, 255);">* Chat</p>
-          <div class="" style="height:364px">
-            <iframe id="frame" style="background-color: rgba(27,32,41,255); width:200%; height:200%;" src="https://picarto.tv/obschat/nogegg/public" title="chat"></iframe> 
+          <div id="chatframe">
+            <div style="height:364px">
+              <iframe id="frame" style="background-color: rgba(27,32,41,255); width:200%; height:200%;" src="https://picarto.tv/chatpopout/nogegg/public" title="chat"></iframe> 
+            </div>
+            
           </div>
         </div><br>
 
@@ -123,6 +126,12 @@ function height(add){
     <div style="height:${h}px;" class="w3-padding w3-green">
                     </div>
     <a class="w3-text-black w3-button" onclick="height(10)">+</a><a class="w3-text-black w3-button" onclick="height(-10)">-</a>
+    `;
+
+    document.getElementById('chatframe').innerHTML = `
+    <div style="height:${h-95}px">
+              <iframe id="frame" style="background-color: rgba(27,32,41,255); width:200%; height:200%;" src="https://picarto.tv/chatpopout/nogegg/public" title="chat"></iframe> 
+    </div>
     `;
 }
 
