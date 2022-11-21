@@ -1,5 +1,11 @@
 [
     {
+        "id": "22",
+        "title": "Creatura",
+        "date": "11/21/22",
+        "img": "static/creature.png"
+    },
+    {
         "id": "21",
         "title": "CRT Robot",
         "date": "11/7/22",
