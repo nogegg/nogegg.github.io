@@ -1,5 +1,11 @@
 [
     {
+        "id": "27",
+        "title": "Robot",
+        "date": "1/2/23",
+        "img": "static/robot_2.jpg"
+    },
+    {
         "id": "26",
         "title": "Cliff Cat",
         "date": "12/17/22",
