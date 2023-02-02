@@ -174,7 +174,7 @@
     $.getJSON(["artposts.json"], function (posts) {
       var pages = [];
       var page = 1;
-      const chunk = 4;
+      const chunk = 5;
       for (let i = 0; i < posts.length; i += chunk) {
         const thisChunk = posts.slice(i, i + chunk);
         pages.push(thisChunk);
