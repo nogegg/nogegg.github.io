@@ -1,5 +1,17 @@
 [
     {
+        "id": "37",
+        "title": "Princess Bubblegum",
+        "date": "3/11/23",
+        "img": "static/bubblegum.jpg"
+    },
+    {
+        "id": "36",
+        "title": "Katia Managan",
+        "date": "3/7/23",
+        "img": "static/katia.jpg"
+    },
+    {
         "id": "35",
         "title": "Old DnD Character Part 2",
         "date": "2/21/23",
