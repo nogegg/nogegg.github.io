@@ -1,5 +1,17 @@
 [
     {
+        "id": "39",
+        "title": "Looks to the Moon and Rivulet",
+        "date": "4/2/23",
+        "img": "static/moon3.png"
+    },
+    {
+        "id": "38",
+        "title": "Marie Itami Again",
+        "date": "3/28/23",
+        "img": "static/marie.png"
+    },
+    {
         "id": "37",
         "title": "Princess Bubblegum",
         "date": "3/11/23",
