@@ -168,6 +168,8 @@
 <script>
   function beep() {
     var noise = new Audio("beep.wav");
+    noise.play()
+    noise.currentTime=0;
   }
 
   function goPage(page) {
