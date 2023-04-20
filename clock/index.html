@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet"> 
 
-  <link rel="shortcut icon" href="twotu.xyz/avys/avy6.png" type="image/x-icon">
+  <link rel="shortcut icon" href="eggno.gg/avys/avy6.png" type="image/x-icon">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="font.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -73,7 +73,7 @@
         const today = new Date();
         let h = today.getHours().toString();
         let m = today.getMinutes().toString();
-        let s = today.getSeconds().toString();
+        let s = (today.getMilliseconds() / 1000).toString();
 
         if(s.toString().length == 1){
           s = '0' + s;
@@ -97,7 +97,7 @@
       } 
 
       function checkTime(i) {
-        if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+        //if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
         return i;
       }
     </script>
