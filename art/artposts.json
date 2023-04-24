@@ -1,5 +1,17 @@
 [
     {
+        "id": "41",
+        "title": "Friends",
+        "date": "4/23/23",
+        "img": "static/leighbird.jpg"
+    },
+    {
+        "id": "40",
+        "title": "Robot Cat",
+        "date": "4/17/23",
+        "img": "static/robotcat_concat.png"
+    },
+    {
         "id": "39",
         "title": "Looks to the Moon and Rivulet",
         "date": "4/2/23",
