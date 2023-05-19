@@ -1,5 +1,17 @@
 [
     {
+        "id": "43",
+        "title": "Creature",
+        "date": "5/8/23",
+        "img": "static/creature.jpg"
+    },
+    {
+        "id": "42",
+        "title": "Motorcycle Robot Remake",
+        "date": "5/7/23",
+        "img": "static/motorbike_redo.jpg"
+    },
+    {
         "id": "41",
         "title": "Friends",
         "date": "4/23/23",
