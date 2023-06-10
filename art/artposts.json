@@ -1,5 +1,35 @@
 [
     {
+        "id": "48",
+        "title": "Skull Cat Remake",
+        "date": "6/10/23",
+        "img": "static/skullcatremake.jpg"
+    },
+    {
+        "id": "47",
+        "title": "Robot Redraw",
+        "date": "6/6/23",
+        "img": "static/robotremake2.jpg"
+    },
+    {
+        "id": "46",
+        "title": "Old 3D Robot Remake",
+        "date": "5/29/23",
+        "img": "static/robotremake.jpg"
+    },
+    {
+        "id": "45",
+        "title": "Plant Creature Again",
+        "date": "5/23/23",
+        "img": "static/plant2.jpg"
+    },
+    {
+        "id": "44",
+        "title": "Plant Creature",
+        "date": "5/21/23",
+        "img": "static/plant1.jpg"
+    },
+    {
         "id": "43",
         "title": "Creature",
         "date": "5/8/23",
