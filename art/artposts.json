@@ -19,15 +19,9 @@
     },
     {
         "id": "45",
-        "title": "Plant Creature Again",
+        "title": "Plant Creature",
         "date": "5/23/23",
         "img": "static/plant2.jpg"
-    },
-    {
-        "id": "44",
-        "title": "Plant Creature",
-        "date": "5/21/23",
-        "img": "static/plant1.jpg"
     },
     {
         "id": "43",
