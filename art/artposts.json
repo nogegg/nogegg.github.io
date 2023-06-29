@@ -1,5 +1,11 @@
 [
     {
+        "id": "49",
+        "title": "Industrial Robot",
+        "date": "6/28/23",
+        "img": "static/industrial_robot.png"
+    },
+    {
         "id": "48",
         "title": "Skull Cat Remake",
         "date": "6/10/23",
