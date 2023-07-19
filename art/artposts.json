@@ -1,5 +1,23 @@
 [
     {
+        "id": "52",
+        "title": "Snake Pilot",
+        "date": "7/18/23",
+        "img": "static/snake.jpg"
+    },
+    {
+        "id": "51",
+        "title": "2 Year Old WIP",
+        "date": "7/10/23",
+        "img": "static/demon.jpg"
+    },
+    {
+        "id": "50",
+        "title": "Industrial Robot Reference",
+        "date": "7/2/23",
+        "img": "static/robotref-yellow.jpg"
+    },
+    {
         "id": "49",
         "title": "Industrial Robot",
         "date": "6/28/23",
