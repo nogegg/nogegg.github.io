@@ -1,5 +1,59 @@
 [
     {
+        "id": "61",
+        "title": "Experiment pt. 2",
+        "date": "10/19/23",
+        "img": "static/experiment2.png"
+    },
+    {
+        "id": "60",
+        "title": "Experiment",
+        "date": "10/19/23",
+        "img": "static/experiment.jpg"
+    },
+    {
+        "id": "59",
+        "title": "Sentry Robot",
+        "date": "10/17/23",
+        "img": "static/gun.jpg"
+    },
+    {
+        "id": "58",
+        "title": "Tiefling Redraw/Redesign",
+        "date": "10/10/23",
+        "img": "static/tiefling.png"
+    },
+    {
+        "id": "57",
+        "title": "Van Robot",
+        "date": "10/2/23",
+        "img": "static/vanbot.jpg"
+    },
+    {
+        "id": "56",
+        "title": "Robot on a Rail",
+        "date": "9/30/23",
+        "img": "static/railbot.jpg"
+    },
+    {
+        "id": "55",
+        "title": "Desk Robot",
+        "date": "9/7/23",
+        "img": "static/robot_desk.jpg"
+    },
+    {
+        "id": "54",
+        "title": "Robot Redesign",
+        "date": "9/3/23",
+        "img": "static/robot_redesign.jpg"
+    },
+    {
+        "id": "53",
+        "title": "Robot",
+        "date": "8/2/23",
+        "img": "static/stupidrobot.jpg"
+    },
+    {
         "id": "52",
         "title": "Snake Pilot",
         "date": "7/18/23",
