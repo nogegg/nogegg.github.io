@@ -1,5 +1,83 @@
 [
     {
+        "id": "70",
+        "title": "Wires",
+        "date": "2/2/2024",
+        "img": "static/wires.png"
+    },
+    {
+        "id": "73",
+        "title": "Garbage Bot",
+        "date": "1/13/2024",
+        "img": "static/garbage.png"
+    },
+    {
+        "id": "72",
+        "title": "Underground Bot",
+        "date": "1/15/2024",
+        "img": "static/underground.png"
+    },
+    {
+        "id": "71",
+        "title": "Flame Thrower Bot",
+        "date": "1/18/2024",
+        "img": "static/flamethrower.png"
+    },
+    {
+        "id": "70",
+        "title": "Undersea Bot",
+        "date": "1/17/2024",
+        "img": "static/undersea.png"
+    },
+    {
+        "id": "69",
+        "title": "Beebo",
+        "date": "1/12/2024",
+        "img": "static/bebo.png"
+    },
+    {
+        "id": "68",
+        "title": "Floran Hunter",
+        "date": "1/12/2024",
+        "img": "static/floran.jpg"
+    },
+    {
+        "id": "67",
+        "title": "Translucent Bot",
+        "date": "12/30/2023",
+        "img": "static/translucent.jpg"
+    },
+    {
+        "id": "66",
+        "title": "Angel",
+        "date": "12/25/2023",
+        "img": "static/angel.png"
+    },
+    {
+        "id": "65",
+        "title": "Huntress Redraw",
+        "date": "12/21/2023",
+        "img": "static/huntressredraw.png"
+    },
+    {
+        "id": "64",
+        "title": "Low Poly Bot 2",
+        "date": "11/18/23",
+        "img": "static/lowpolyanim.mp4"
+    },
+    {
+        "id": "63",
+        "title": "Low Poly Bot",
+        "date": "11/18/23",
+        "img": "static/lowpolybot.png"
+    },
+    {
+        "id": "62",
+        "title": "Librarian",
+        "date": "11/8/23",
+        "img": "static/librarian.png"
+    },
+    {
         "id": "61",
         "title": "Experiment pt. 2",
         "date": "10/19/23",
