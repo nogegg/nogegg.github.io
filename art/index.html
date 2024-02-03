@@ -238,7 +238,8 @@
       } else {
         pages[page - 1].forEach(e => {
 
-          final = final + `
+          if(e.type == "img"){
+            final = final + `
                 <div class="w3-animate-top" style="min-width: 100%; background-color: rgb(63, 50, 66); border-width: 1px; border-style: solid solid solid solid; max-width:500px;">
                   <p id=post${e.id} style="margin-left:8px; color: rgb(197, 176, 201);">* ${e.title} - ${e.date}</p>
                   <div class="" style="background-color: rgb(63, 50, 66); border-width: 1px; border-style: solid none solid none;">
@@ -247,6 +248,21 @@
                   <a onclick="beep()" class="w3-button" href='post.html?pageref=${page}&post=${e.id}' style="width:100%;">* View Post *</a>
                 </div><br>
               `
+          } else {
+            final = final + `
+                <div class="w3-animate-top" style="min-width: 100%; background-color: rgb(63, 50, 66); border-width: 1px; border-style: solid solid solid solid; max-width:500px;">
+                  <p id=post${e.id} style="margin-left:8px; color: rgb(197, 176, 201);">* ${e.title} - ${e.date}</p>
+                  <div class="" style="background-color: rgb(63, 50, 66); border-width: 1px; border-style: solid none solid none;">
+                    <video width="320" height="240" controls>
+                      <source src="${e.img}" type="video/mp4">
+                      Your browser does not this video embedding method.
+                    </video> 
+                  </div>
+                  <a onclick="beep()" class="w3-button" href='post.html?pageref=${page}&post=${e.id}' style="width:100%;">* View Post *</a>
+                </div><br>
+              `
+          }
+
         })
       }
 

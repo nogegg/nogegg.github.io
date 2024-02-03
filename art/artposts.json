@@ -3,432 +3,504 @@
         "id": "70",
         "title": "Wires",
         "date": "2/2/2024",
-        "img": "static/wires.png"
+        "img": "static/wires.png",
+        "type": "img"
     },
     {
         "id": "73",
         "title": "Garbage Bot",
         "date": "1/13/2024",
-        "img": "static/garbage.png"
+        "img": "static/garbage.png",
+        "type": "img"
     },
     {
         "id": "72",
         "title": "Underground Bot",
         "date": "1/15/2024",
-        "img": "static/underground.png"
+        "img": "static/underground.png",
+        "type": "img"
     },
     {
         "id": "71",
         "title": "Flame Thrower Bot",
         "date": "1/18/2024",
-        "img": "static/flamethrower.png"
+        "img": "static/flamethrower.png",
+        "type": "img"
     },
     {
         "id": "70",
         "title": "Undersea Bot",
         "date": "1/17/2024",
-        "img": "static/undersea.png"
+        "img": "static/undersea.png",
+        "type": "img"
     },
     {
         "id": "69",
         "title": "Beebo",
         "date": "1/12/2024",
-        "img": "static/bebo.png"
+        "img": "static/bebo.png",
+        "type": "img"
     },
     {
         "id": "68",
         "title": "Floran Hunter",
         "date": "1/12/2024",
-        "img": "static/floran.jpg"
+        "img": "static/floran.jpg",
+        "type": "img"
     },
     {
         "id": "67",
         "title": "Translucent Bot",
         "date": "12/30/2023",
-        "img": "static/translucent.jpg"
+        "img": "static/translucent.jpg",
+        "type": "img"
     },
     {
         "id": "66",
         "title": "Angel",
         "date": "12/25/2023",
-        "img": "static/angel.png"
+        "img": "static/angel.png",
+        "type": "img"
     },
     {
         "id": "65",
         "title": "Huntress Redraw",
         "date": "12/21/2023",
-        "img": "static/huntressredraw.png"
+        "img": "static/huntressredraw.png",
+        "type": "img"
     },
     {
         "id": "64",
         "title": "Low Poly Bot 2",
         "date": "11/18/23",
-        "img": "static/lowpolyanim.mp4"
+        "img": "static/lowpolyanim.mp4",
+        "type": "vid"
     },
     {
         "id": "63",
         "title": "Low Poly Bot",
         "date": "11/18/23",
-        "img": "static/lowpolybot.png"
+        "img": "static/lowpolybot.png",
+        "type": "img"
     },
     {
         "id": "62",
         "title": "Librarian",
         "date": "11/8/23",
-        "img": "static/librarian.png"
+        "img": "static/librarian.png",
+        "type": "img"
     },
     {
         "id": "61",
         "title": "Experiment pt. 2",
         "date": "10/19/23",
-        "img": "static/experiment2.png"
+        "img": "static/experiment2.png",
+        "type": "img"
     },
     {
         "id": "60",
         "title": "Experiment",
         "date": "10/19/23",
-        "img": "static/experiment.jpg"
+        "img": "static/experiment.jpg",
+        "type": "img"
     },
     {
         "id": "59",
         "title": "Sentry Robot",
         "date": "10/17/23",
-        "img": "static/gun.jpg"
+        "img": "static/gun.jpg",
+        "type": "img"
     },
     {
         "id": "58",
         "title": "Tiefling Redraw/Redesign",
         "date": "10/10/23",
-        "img": "static/tiefling.png"
+        "img": "static/tiefling.png",
+        "type": "img"
     },
     {
         "id": "57",
         "title": "Van Robot",
         "date": "10/2/23",
-        "img": "static/vanbot.png"
+        "img": "static/vanbot.png",
+        "type": "img"
     },
     {
         "id": "56",
         "title": "Robot on a Rail",
         "date": "9/30/23",
-        "img": "static/railbot.jpg"
+        "img": "static/railbot.jpg",
+        "type": "img"
     },
     {
         "id": "55",
         "title": "Desk Robot",
         "date": "9/7/23",
-        "img": "static/robot_desk.jpg"
+        "img": "static/robot_desk.jpg",
+        "type": "img"
     },
     {
         "id": "54",
         "title": "Robot Redesign",
         "date": "9/3/23",
-        "img": "static/robot_redesign.jpg"
+        "img": "static/robot_redesign.jpg",
+        "type": "img"
     },
     {
         "id": "53",
         "title": "Robot",
         "date": "8/2/23",
-        "img": "static/stupidrobot.jpg"
+        "img": "static/stupidrobot.jpg",
+        "type": "img"
     },
     {
         "id": "52",
         "title": "Snake Pilot",
         "date": "7/18/23",
-        "img": "static/snake.jpg"
+        "img": "static/snake.jpg",
+        "type": "img"
     },
     {
         "id": "51",
         "title": "2 Year Old WIP",
         "date": "7/10/23",
-        "img": "static/demon.jpg"
+        "img": "static/demon.jpg",
+        "type": "img"
     },
     {
         "id": "50",
         "title": "Industrial Robot Reference",
         "date": "7/2/23",
-        "img": "static/robotref-yellow.jpg"
+        "img": "static/robotref-yellow.jpg",
+        "type": "img"
     },
     {
         "id": "49",
         "title": "Industrial Robot",
         "date": "6/28/23",
-        "img": "static/industrial_robot.png"
+        "img": "static/industrial_robot.png",
+        "type": "img"
     },
     {
         "id": "48",
         "title": "Skull Cat Remake",
         "date": "6/10/23",
-        "img": "static/skullcatremake.png"
+        "img": "static/skullcatremake.png",
+        "type": "img"
     },
     {
         "id": "47",
         "title": "Robot Redraw",
         "date": "6/6/23",
-        "img": "static/robotremake2.jpg"
+        "img": "static/robotremake2.jpg",
+        "type": "img"
     },
     {
         "id": "46",
         "title": "Old 3D Robot Remake",
         "date": "5/29/23",
-        "img": "static/robotremake.jpg"
+        "img": "static/robotremake.jpg",
+        "type": "img"
     },
     {
         "id": "45",
         "title": "Plant Creature",
         "date": "5/23/23",
-        "img": "static/plant2.jpg"
+        "img": "static/plant2.jpg",
+        "type": "img"
     },
     {
         "id": "43",
         "title": "Creature",
         "date": "5/8/23",
-        "img": "static/creature.jpg"
+        "img": "static/creature.jpg",
+        "type": "img"
     },
     {
         "id": "42",
         "title": "Motorcycle Robot Remake",
         "date": "5/7/23",
-        "img": "static/motorbike_redo.jpg"
+        "img": "static/motorbike_redo.jpg",
+        "type": "img"
     },
     {
         "id": "41",
         "title": "Friends",
         "date": "4/23/23",
-        "img": "static/leighbird.jpg"
+        "img": "static/leighbird.jpg",
+        "type": "img"
     },
     {
         "id": "40",
         "title": "Robot Cat",
         "date": "4/17/23",
-        "img": "static/robotcat_concat.png"
+        "img": "static/robotcat_concat.png",
+        "type": "img"
     },
     {
         "id": "39",
         "title": "Looks to the Moon and Rivulet",
         "date": "4/2/23",
-        "img": "static/moon3.png"
+        "img": "static/moon3.png",
+        "type": "img"
     },
     {
         "id": "38",
         "title": "Marie Itami Again",
         "date": "3/28/23",
-        "img": "static/marie.png"
+        "img": "static/marie.png",
+        "type": "img"
     },
     {
         "id": "37",
         "title": "Princess Bubblegum",
         "date": "3/11/23",
-        "img": "static/bubblegum.jpg"
+        "img": "static/bubblegum.jpg",
+        "type": "img"
     },
     {
         "id": "36",
         "title": "Katia Managan",
         "date": "3/7/23",
-        "img": "static/katia.jpg"
+        "img": "static/katia.jpg",
+        "type": "img"
     },
     {
         "id": "35",
         "title": "Old DnD Character Part 2",
         "date": "2/21/23",
-        "img": "static/dnd_2.png"
+        "img": "static/dnd_2.png",
+        "type": "img"
     },
     {
         "id": "34",
         "title": "Old DnD Character",
         "date": "2/21/23",
-        "img": "static/dnd_redraw.png"
+        "img": "static/dnd_redraw.png",
+        "type": "img"
     },
     {
         "id": "33",
         "title": "Desk Bird",
         "date": "2/20/23",
-        "img": "static/deskbird.jpg"
+        "img": "static/deskbird.jpg",
+        "type": "img"
     },
     {
         "id": "32",
         "title": "Work Doodle",
         "date": "2/8/23",
-        "img": "static/crt_robot.png"
+        "img": "static/crt_robot.png",
+        "type": "img"
     },
     {
         "id": "31",
         "title": "Hornet",
         "date": "2/2/23",
-        "img": "static/hornet.png"
+        "img": "static/hornet.png",
+        "type": "img"
     },
     {
         "id": "30",
         "title": "Diane",
         "date": "2/1/23",
-        "img": "static/diane.png"
+        "img": "static/diane.png",
+        "type": "img"
     },
     {
         "id": "29",
         "title": "Stella Hoshii",
         "date": "1/31/23",
-        "img": "static/stella.png"
+        "img": "static/stella.png",
+        "type": "img"
     },
     {
         "id": "28",
         "title": "Alula",
         "date": "1/18/23",
-        "img": "static/alula.png"
+        "img": "static/alula.png",
+        "type": "img"
     },
     {
         "id": "27",
         "title": "Robot",
         "date": "1/2/23",
-        "img": "static/robot_2.jpg"
+        "img": "static/robot_2.jpg",
+        "type": "img"
     },
     {
         "id": "26",
         "title": "Cliff Cat",
         "date": "12/17/22",
-        "img": "static/catcliff.jpg"
+        "img": "static/catcliff.jpg",
+        "type": "img"
     },
     {
         "id": "25",
         "title": "Basement Cat",
         "date": "12/3/22",
-        "img": "static/crt_cat.png"
+        "img": "static/crt_cat.png",
+        "type": "img"
     },
     {
         "id": "24",
         "title": "Tall Cat Again",
         "date": "11/27/22",
-        "img": "static/cat_egypt.png"
+        "img": "static/cat_egypt.png",
+        "type": "img"
     },
     {
         "id": "23",
         "title": "Robot Design",
         "date": "11/26/22",
-        "img": "static/robot_tumblr.png"
+        "img": "static/robot_tumblr.png",
+        "type": "img"
     },
     {
         "id": "22",
         "title": "Creatura",
         "date": "11/21/22",
-        "img": "static/creature.png"
+        "img": "static/creature.png",
+        "type": "img"
     },
     {
         "id": "21",
         "title": "CRT Robot",
         "date": "11/7/22",
-        "img": "static/crt.jpg"
+        "img": "static/crt.jpg",
+        "type": "img"
     },
     {
         "id": "20",
         "title": "Bird",
         "date": "10/26/22",
-        "img": "static/bird.png"
+        "img": "static/bird.png",
+        "type": "img"
     },
     {
         "id": "19",
         "title": "Princess Remedy",
         "date": "10/25/22",
-        "img": "static/remedy.png"
+        "img": "static/remedy.png",
+        "type": "img"
     },
     {
         "id": "18",
         "title": "Robot 2",
         "date": "8/9/22",
-        "img": "static/screenrobot_2.png"
+        "img": "static/screenrobot_2.png",
+        "type": "img"
     },
     {
         "id": "17",
         "title": "Robot 1",
         "date": "8/9/22",
-        "img": "static/screenrobot_1.png"
+        "img": "static/screenrobot_1.png",
+        "type": "img"
     },
     {
         "id": "16",
         "title": "Robot Ref",
         "date": "7/22/22",
-        "img": "static/robot-ref.jpg"
+        "img": "static/robot-ref.jpg",
+        "type": "img"
     },
     {
         "id": "15",
         "title": "Lich",
         "date": "6/15/22",
-        "img": "static/lich.png"
+        "img": "static/lich.png",
+        "type": "img"
     },
     {
         "id": "14",
         "title": "N'mhao (ffxiv)",
         "date": "5/12/22",
-        "img": "static/mhao.png"
+        "img": "static/mhao.png",
+        "type": "img"
     },
     {
         "id": "13",
         "title": "Robot",
         "date": "5/9/22",
-        "img": "static/trianglebot.png"
+        "img": "static/trianglebot.png",
+        "type": "img"
     },
     {
         "id": "12",
         "title": "Tasque",
         "date": "5/1/22",
-        "img": "static/tasque.png"
+        "img": "static/tasque.png",
+        "type": "img"
     },
     {
         "id": "10",
         "title": "Kit Reference",
         "date": "4/16/22",
-        "img": "static/kit.jpg"
+        "img": "static/kit.jpg",
+        "type": "img"
     },
     {
         "id": "9",
         "title": "Industrial",
         "date": "3/12/22",
-        "img": "static/industrial.png"
+        "img": "static/industrial.png",
+        "type": "img"
     },
     {
         "id": "8",
         "title": "Kit",
         "date": "3/5/22",
-        "img": "static/kit.png"
+        "img": "static/kit.png",
+        "type": "img"
     },
     {
         "id": "7",
         "title": "Skull Cat",
         "date": "2/26/22",
-        "img": "static/skullcat.png"
+        "img": "static/skullcat.png",
+        "type": "img"
     },
     {
         "id": "6",
         "title": "Moth",
         "date": "2/15/2022",
-        "img": "static/moth.png"
+        "img": "static/moth.png",
+        "type": "img"
     },
     {
         "id": "5",
         "title": "Marie (3)",
         "date": "1/22/22",
-        "img": "static/marie.jpg"
+        "img": "static/marie.jpg",
+        "type": "img"
     },
     {
         "id": "4",
         "title": "Robot Drone",
         "date": "11/28/21",
-        "img": "static/drone.jpg"
+        "img": "static/drone.jpg",
+        "type": "img"
     },
     {
         "id": "3",
         "title": "Game Thing",
         "date": "1/25/21",
-        "img": "static/gamepad.png"
+        "img": "static/gamepad.png",
+        "type": "img"
     },
     {
         "id": "2",
         "title": "Robot",
         "date": "4/9/21",
-        "img": "static/motorcycle.jpg"
+        "img": "static/motorcycle.jpg",
+        "type": "img"
     },
     {
         "id": "1",
         "title": "City",
         "date": "2/10/21",
-        "img": "static/city.jpg"
+        "img": "static/city.jpg",
+        "type": "img"
     }
 ]
