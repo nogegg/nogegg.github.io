@@ -100,7 +100,8 @@
                     postIDs['post' + post.id] = {
                         id: post.id,
                         src: post.img,
-                        title: post.title
+                        title: post.title,
+                        type: post.type
                     }
                 });
 
@@ -120,6 +121,7 @@
                     var p = getParameterByName('post');
                     if (postIDs['post' + p]) {
                         embedImage = './' + postIDs['post' + p].src;
+                        embedType = postIDs['post' + p].type;
                         embedTitle = postIDs['post' + p].title;
                         refID = 'post' + postIDs['post' + p].id;
                     }
@@ -130,15 +132,34 @@
                     refpage = getParameterByName('pageref');
                 }
 
-                final = `
-                <center><img style="max-width:100%" src=${embedImage}></center>
-                <br>
-                <center>
+
+                if (embedType === "img"){
+                    final = `
+                    <center><img style="max-width:100%" src=${embedImage}></center>
+                    <br>
+                    <center>
                     <div class="" style="max-width: 200px; background-color: black; border-width: 1px; border-style: solid solid solid solid;">
                         <a class="w3-button" href='./?page=${refpage}#${refID}' style="min-width: 100%">* Go Back *</a>
                     </div>
-                </center>
+                    </center>
                 `
+                } else {
+                    final = `
+                    <center>
+                        <video width=100% controls>
+                            <source src="${embedImage}" type="video/mp4">
+                            Your browser does not this video embedding method.
+                        </video>
+                    </center>
+                    <br>
+                    <center>
+                    <div class="" style="max-width: 200px; background-color: black; border-width: 1px; border-style: solid solid solid solid;">
+                        <a class="w3-button" href='./?page=${refpage}#${refID}' style="min-width: 100%">* Go Back *</a>
+                    </div>
+                    </center>
+                `
+                }
+
                 document.title = embedTitle + ' - Art Zone';
 
                 document.getElementById('post').innerHTML = final;
