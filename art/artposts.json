@@ -1,6 +1,41 @@
 [
     {
-        "id": "70",
+        "id": "79",
+        "title": "Beige",
+        "date": "2/12/2024",
+        "img": "static/retrobot.jpg",
+        "type": "img"
+    },
+    {
+        "id": "78",
+        "title": "Trash Bot",
+        "date": "2/11/2024",
+        "img": "static/tvbot.jpg",
+        "type": "img"
+    },
+    {
+        "id": "77",
+        "title": "Co-Workers",
+        "date": "2/10/2024",
+        "img": "static/co-workers.jpg",
+        "type": "img"
+    },
+    {
+        "id": "76",
+        "title": "Lizard",
+        "date": "2/8/2024",
+        "img": "static/abigail.jpg",
+        "type": "img"
+    },
+    {
+        "id": "75",
+        "title": "Wires 2",
+        "date": "2/5/2024",
+        "img": "static/cordbot.jpg",
+        "type": "img"
+    },
+    {
+        "id": "74",
         "title": "Wires",
         "date": "2/2/2024",
         "img": "static/wires.png",
