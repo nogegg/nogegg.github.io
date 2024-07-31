@@ -29,13 +29,6 @@
         "type": "img"
     },
     {
-        "id": "108",
-        "title": "Harpy",
-        "date": "6/8/2024",
-        "img": "static/lisa_6_8.jpg",
-        "type": "img"
-    },
-    {
         "id": "107",
         "title": "Stickers",
         "date": "6/19/2024",
@@ -64,13 +57,6 @@
         "type": "img"
     },
     {
-        "id": "103",
-        "title": "Harpy",
-        "date": "5/21/2024",
-        "img": "static/harpy_21.jpg",
-        "type": "img"
-    },
-    {
         "id": "102",
         "title": "3D CRT Robot",
         "date": "5/28/2024",
@@ -81,14 +67,14 @@
         "id": "101",
         "title": "CRT Robot Sketch",
         "date": "5/26/2024",
-        "img": "static/ctr_5_26.jpg",
+        "img": "static/crt_5_26.jpg",
         "type": "img"
     },
     {
         "id": "100",
         "title": "Harpy",
         "date": "5/21/2024",
-        "img": "static/harpy_21.jpg",
+        "img": "static/harpy_5_21.jpg",
         "type": "img"
     },
     {
