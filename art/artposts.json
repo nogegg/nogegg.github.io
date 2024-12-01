@@ -1,6 +1,86 @@
 
 [
     {
+        "id": "123",
+        "title": "Robot Ad",
+        "date": "11/22/2024",
+        "img": "static/ad_11_22.png",
+        "type": "img"
+    },
+    {
+        "id": "122",
+        "title": "Miqo'te Mage",
+        "date": "11/19/2024",
+        "img": "static/miqo_11_19.png",
+        "type": "img"
+    },
+    {
+        "id": "121",
+        "title": "Angel",
+        "date": "10/26/2024",
+        "img": "static/angel_10_26.png",
+        "type": "img"
+    },
+    {
+        "id": "120",
+        "title": "Skull Thing",
+        "date": "10/11/2024",
+        "img": "static/scythe_10_11.png",
+        "type": "img"
+    },
+    {
+        "id": "119",
+        "title": "Window Moth",
+        "date": "10/5/2024",
+        "img": "static/mothwindow_10_5.png",
+        "type": "img"
+    },
+    {
+        "id": "118",
+        "title": "Fox",
+        "date": "10/2/2024",
+        "img": "static/fox_10_2.png",
+        "type": "img"
+    },
+    {
+        "id": "117",
+        "title": "Flamethrower Robot",
+        "date": "9/27/2024",
+        "img": "static/flamethrower_9_27.png",
+        "type": "img"
+    },
+    {
+        "id": "116",
+        "title": "Miqo'te",
+        "date": "9/24/2024",
+        "img": "static/miqo_9_24.png",
+        "type": "img"
+    },
+    {
+        "id": "115",
+        "title": "Tube Head Robot",
+        "date": "9/20/2024",
+        "img": "static/tubehead_9_20.png",
+        "type": "img"
+    },
+    {
+        "id": "114",
+        "title": "Diagnostic Robot",
+        "date": "8/27/2024",
+        "img": "static/snapon_8_27.png",
+        "type": "img"
+    },
+    {
+        "id": "113",
+        "title": "Miqo'te Archer",
+        "date": "8/20/2024",
+        "img": "static/miqo_8_20.png",
+        "type": "img"
+    },
+
+
+
+    {
         "id": "112",
         "title": "CRT Robot Again",
         "date": "6/8/2024",
